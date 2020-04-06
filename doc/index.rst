@@ -1,6 +1,6 @@
-################################################
-ap_verify_dataset_template documentation preview
-################################################
+##############################################
+ap_verify_ci_cosmos_pdr2 documentation preview
+##############################################
 
 .. This page is for local development only. It isn't published to pipelines.lsst.io.
 
@@ -9,5 +9,4 @@ ap_verify_dataset_template documentation preview
 .. toctree::
    :maxdepth: 1
 
-   ap_verify_dataset_template/index
-
+   ap_verify_ci_cosmos_pdr2/index
