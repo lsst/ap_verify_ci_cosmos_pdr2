@@ -12,7 +12,7 @@ path                  | description
 :---------------------|:-----------------------------
 `doc`                 | Contains Sphinx package documentation for the dataset. This documentation may be linked to from other packages, such as `ap_verify`.
 `raw`                 | Raw, compressed HSC fits images from SSP_UDEEP_COSMOS pointing 1527.
-`calib`               | To be populated with master calibs. Calibration files do not need to follow a specific subdirectory structure. Currently empty.
+`calib`               | HSC master calibs from the 2016 COSMOS campaign or, where necessary, from 2015.
 `config`              | To be populated with dataset-specific configs. Currently contains an example file corresponding to the contents of `raw` and `refcats`.
 `templates`           | To be populated with `TemplateCoadd` images produced by a compatible version of the LSST pipelines. Must be organized as a filesystem-based Butler repo. Currently empty.
 `repo`                | A template for a Butler raw data repository. This directory must never be written to; instead, it should be copied to a separate location, and data ingested into the copy (this is handled automatically by `ap_verify`, see below). Currently contains the appropriate HSC `_mapper` file.
