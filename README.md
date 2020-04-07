@@ -13,10 +13,10 @@ path                  | description
 `doc`                 | Contains Sphinx package documentation for the dataset. This documentation may be linked to from other packages, such as `ap_verify`.
 `raw`                 | Raw, compressed HSC fits images from SSP_UDEEP_COSMOS pointing 1527.
 `calib`               | HSC master calibs from the 2016 COSMOS campaign or, where necessary, from 2015.
-`config`              | To be populated with dataset-specific configs. Currently contains an example file corresponding to the contents of `raw` and `refcats`.
+`config`              | Dataset-specific configs to help Stack code work with this dataset.
 `templates`           | To be populated with `TemplateCoadd` images produced by a compatible version of the LSST pipelines. Must be organized as a filesystem-based Butler repo. Currently empty.
 `repo`                | A template for a Butler raw data repository. This directory must never be written to; instead, it should be copied to a separate location, and data ingested into the copy (this is handled automatically by `ap_verify`, see below). Currently contains the appropriate HSC `_mapper` file.
-`refcats`             | To be populated with tarball(s) of HTM shards from relevant reference catalogs. Currently contains a small (useless) example tarball.
+`refcats`             | Tarballs of Gaia and PS1 reference catalogs in HTM format for regions overlapping the COSMOS pointing.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
 
 
