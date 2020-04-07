@@ -22,7 +22,10 @@ The input data were chosen arbitrarily, so they are not even suitable for testin
 Dataset contents
 ================
 
-This package's contents are to be determined.
+This package provides two partially overlapping images from the same night in the 2016 `COSMOS`_ survey.
+It contains:
+
+* CCDs 50 and 51 from visits 59150 and 59160, respectively, from pointing 1527 in the ``SSP_UDEEP_COSMOS`` survey field, in g band.
 
 .. _ap_verify_ci_cosmos_pdr2-contributing:
 

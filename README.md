@@ -3,7 +3,7 @@
 
 Data from COSMOS PDR2 to test basic functionality of alert production.
 
-Contains HSC visits arbitrarily chosen from the second data release.
+Contains HSC visits arbitrarily chosen from the second data release's ultradeep fields.
 Because the data have not been selected in any way, this dataset may not be suitable for scientific validation.
 
 Relevant Files and Directories
@@ -11,7 +11,7 @@ Relevant Files and Directories
 path                  | description
 :---------------------|:-----------------------------
 `doc`                 | Contains Sphinx package documentation for the dataset. This documentation may be linked to from other packages, such as `ap_verify`.
-`raw`                 | To be populated with raw data. Data files do not need to follow a specific subdirectory structure. Currently contains a single small fits file (taken from `obs_test`) to test `git-lfs` functionality.
+`raw`                 | Raw, compressed HSC fits images from SSP_UDEEP_COSMOS pointing 1527.
 `calib`               | To be populated with master calibs. Calibration files do not need to follow a specific subdirectory structure. Currently empty.
 `config`              | To be populated with dataset-specific configs. Currently contains an example file corresponding to the contents of `raw` and `refcats`.
 `templates`           | To be populated with `TemplateCoadd` images produced by a compatible version of the LSST pipelines. Must be organized as a filesystem-based Butler repo. Currently empty.
