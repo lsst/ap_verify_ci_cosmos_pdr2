@@ -2,10 +2,10 @@
 
 # Name of this package
 # Also the name of the package documentation subdirectory.
-package: "ap_verify_dataset_template"
+package: "ap_verify_ci_cosmos_pdr2"
 
 # Name of the static content directories (subdirectories of `_static`).
 # Static content directories are usually named after the package.
 # Most packages do not need a static content directory (leave commented out).
 # statics:
-#   - "_static/ap_verify_dataset_template"
+#   - "_static/ap_verify_ci_cosmos_pdr2"

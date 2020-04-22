@@ -8,5 +8,4 @@ from documenteer.sphinxconfig.stackconf import build_package_configs
 
 _g = globals()
 _g.update(build_package_configs(
-    project_name='ap_verify_dataset_template',))
-
+    project_name='ap_verify_ci_cosmos_pdr2',))
