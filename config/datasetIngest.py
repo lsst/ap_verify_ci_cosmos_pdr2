@@ -6,4 +6,4 @@ config.refcats = {
 }
 
 # Workaround for DM-24395
-config.defectIngester.register.visit = ['calibDate', 'filter']
+config.curatedCalibIngester.register.visit = ['calibDate', 'filter']
