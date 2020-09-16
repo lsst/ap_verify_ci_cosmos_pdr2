@@ -3,3 +3,7 @@
 config.datasetIgnorePatterns = ["raw", "*Coadd_skyMap", "ref_cat", "defects"]
 # Suppress auto-conversion of skymaps; it causes trouble for the template repo
 config.rootSkyMapName = None
+
+# Already stored in convertRepo_templates.py
+config.doRegisterInstrument = False
+config.doWriteCuratedCalibrations = False
