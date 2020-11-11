@@ -1,5 +1,5 @@
 description: Butler Data Repository Export
-version: 1.0.0
+version: 1.0.1
 data:
 - type: dimension
   element: instrument
@@ -976,14 +976,14 @@ data:
   run: HSC/calib/gen2/2016-02-04
   records:
   - dataset_id:
-    - 985
+    - 989
     data_id:
     - instrument: HSC
       detector: 50
     path: HSC/calib/gen2/2016-02-04/dark/dark_50_HSC_HSC_calib_gen2_2016-02-04.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
   - dataset_id:
-    - 984
+    - 988
     data_id:
     - instrument: HSC
       detector: 51
@@ -7054,7 +7054,7 @@ data:
   run: HSC/calib/gen2/2015-03-23
   records:
   - dataset_id:
-    - 987
+    - 986
     data_id:
     - instrument: HSC
       detector: 50
@@ -7062,7 +7062,7 @@ data:
     path: HSC/calib/gen2/2015-03-23/flat/g/HSC-G/flat_g_HSC-G_50_HSC_HSC_calib_gen2_2015-03-23.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
   - dataset_id:
-    - 986
+    - 987
     data_id:
     - instrument: HSC
       detector: 51
@@ -7907,7 +7907,7 @@ data:
   run: HSC/calib/gen2/2015-11-02
   records:
   - dataset_id:
-    - 988
+    - 984
     data_id:
     - instrument: HSC
       detector: 50
@@ -7915,7 +7915,7 @@ data:
     path: HSC/calib/gen2/2015-11-02/sky/g/HSC-G/sky_g_HSC-G_50_HSC_HSC_calib_gen2_2015-11-02.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
   - dataset_id:
-    - 989
+    - 985
     data_id:
     - instrument: HSC
       detector: 51
@@ -9775,18 +9775,18 @@ data:
   - begin: !butler_time/tai/iso '1987-11-06 00:00:00.000000000'
     end: !butler_time/tai/iso '2042-08-07 00:00:00.000000000'
     dataset_ids:
-    - 987
     - 986
+    - 987
   - begin: !butler_time/tai/iso '1988-06-17 00:00:00.000000000'
     end: !butler_time/tai/iso '2043-03-19 00:00:00.000000000'
     dataset_ids:
-    - 988
-    - 989
+    - 984
+    - 985
   - begin: !butler_time/tai/iso '1988-09-19 00:00:00.000000000'
     end: !butler_time/tai/iso '2043-06-21 00:00:00.000000000'
     dataset_ids:
-    - 985
-    - 984
+    - 989
+    - 988
   - begin: !butler_time/tai/iso '1988-10-21 00:00:00.000000000'
     end: !butler_time/tai/iso '2043-07-23 00:00:00.000000000'
     dataset_ids:
