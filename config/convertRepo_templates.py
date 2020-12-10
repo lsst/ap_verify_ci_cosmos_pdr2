@@ -5,3 +5,6 @@ config.datasetIncludePatterns = ["*Coadd*"]
 config.datasetIgnorePatterns = []
 for coaddType in ["deep", "goodSeeing", "dcr"]:
     config.runs[f"{coaddType}Coadd"] = f"templates/{coaddType}"
+
+# Work around HSC defaults assuming HSC/masks must exist
+config.extraUmbrellaChildren = []
