@@ -8,4 +8,6 @@ for refcat in config.refCats:
 
 # Already stored in convertRepo_templates.py
 config.doRegisterInstrument = False
-config.doWriteCuratedCalibrations = False
+
+# Work around HSC defaults assuming HSC/masks must exist
+config.extraUmbrellaChildren = []
