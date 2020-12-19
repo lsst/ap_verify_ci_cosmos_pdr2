@@ -4,7 +4,7 @@ import os.path
 from lsst.utils import getPackageDir
 from lsst.meas.algorithms import LoadIndexedReferenceObjectsTask
 
-hscDir = os.path.join(getPackageDir("obs_subaru"), "config", "hsc")
+hscDir = os.path.join(getPackageDir("obs_subaru"), "config")
 
 # Use gaia for astrometry (phot_g_mean for everything, as that is the broadest
 # band with the most depth)
