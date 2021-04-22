@@ -3,3 +3,4 @@
 config.coaddName = "deep"
 config.getTemplate.coaddName = config.coaddName
 config.getTemplate.warpType = "direct"
+config.doScaleDiffimVariance = True
