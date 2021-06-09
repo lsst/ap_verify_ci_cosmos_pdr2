@@ -9,3 +9,7 @@ preloaded/calib/HSC/bias !filter !diff !merge
 preloaded/calib/HSC/dark !filter !diff !merge
 preloaded/calib/HSC/flat !filter !diff !merge
 preloaded/templates/ !filter !diff !merge
+
+# Must be updated any time Gen 3 repository is updated, but most changes
+# are not human-meaningful.
+config/export.yaml linguist-generated=true
