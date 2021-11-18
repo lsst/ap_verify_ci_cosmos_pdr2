@@ -44,10 +44,7 @@ lsst.log.configure_pylog_MDC("DEBUG", MDC_class=None)
 ########################################
 # Fields and catalogs to process
 
-# Use SkyCoord because it provides built-in sexagecimal and HMS support.
-FIELDS = [SkyCoord("10h00m28.800s", "+02d12m36.00s"),  # field 26 (2014:04)
-          SkyCoord("10h20m28.800s", "-06d31m12.00s"),  # field 40 (2014:10)
-          SkyCoord("10h21m52.800s", "-04d57m00.00s"),  # field 42 (2014:09)
+FIELDS = [SkyCoord(149.8594, 2.2225, unit="deg"),  # visit 59150, detector 50
           ]
 FIELD_RADIUS = 2.0  # degrees
 
