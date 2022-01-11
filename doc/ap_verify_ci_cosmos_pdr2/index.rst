@@ -26,7 +26,7 @@ This package provides two partially overlapping images from the same night in th
 It contains:
 
 * CCDs 50 and 51 from visits 59150 and 59160, respectively, from pointing 1527 in the ``SSP_UDEEP_COSMOS`` survey field, in g band.
-* biases, darks, brighter-fatter kernals, and g-band flats and sky frames.
+* biases, darks, brighter-fatter kernels, and g-band flats and sky frames.
 * reference catalogs for Gaia and Pan-STARRS1, covering the raw images' footprint.
 * image differencing templates coadded from 2014 COSMOS data, covering the raw images' footprint.
 
