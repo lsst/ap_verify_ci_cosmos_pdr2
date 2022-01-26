@@ -2,10 +2,3 @@
 *.gz filter=lfs diff=lfs merge=lfs -text
 *.fz filter=lfs diff=lfs merge=lfs -text
 *.sqlite3 filter=lfs diff=lfs merge=lfs -text
-
-# These look like fits files, but are really symbolic links
-preloaded/calib/HSC/sky !filter !diff !merge
-preloaded/calib/HSC/bias !filter !diff !merge
-preloaded/calib/HSC/dark !filter !diff !merge
-preloaded/calib/HSC/flat !filter !diff !merge
-preloaded/templates/ !filter !diff !merge
