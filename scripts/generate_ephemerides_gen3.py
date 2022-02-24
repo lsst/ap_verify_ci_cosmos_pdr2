@@ -112,7 +112,7 @@ def _ingest_raws(repo, raw_dir, run):
     run : `str`
         The name of the run into which to import the raws.
     """
-    raws = glob.glob(os.path.join(raw_dir, '**', '*.fits.fz'), recursive=True)
+    raws = glob.glob(os.path.join(raw_dir, '**', '*.fits.gz'), recursive=True)
     # explicit config workaround for DM-971
     ingester = lsst.obs.base.RawIngestTask(butler=repo, config=lsst.obs.base.RawIngestConfig())
     ingester.run(raws, run=run)
