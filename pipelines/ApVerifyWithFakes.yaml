@@ -43,7 +43,12 @@ tasks:
     class: lsst.ip.isr.IsrTask
     config:
       # Ignore missing calibrations
-      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/isr.py
+      doBrighterFatter: false
+      doAttachTransmissionCurve: false
+      doUseOpticsTransmission: false
+      doUseFilterTransmission: false
+      doUseSensorTransmission: false
+      doUseAtmosphereTransmission: false
   calibrate:
     class: lsst.pipe.tasks.calibrate.CalibrateTask
     config:
