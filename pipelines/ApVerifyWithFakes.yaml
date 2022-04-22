@@ -51,6 +51,13 @@ tasks:
     config:
       # Use dataset's reference catalogs
       file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrate.py
+  characterizeImage:
+    class: lsst.pipe.tasks.characterizeImage.CharacterizeImageTask
+    # PIFF default of kernelSize=21 is too small for fakes data.
+    config:
+      python: |
+        config.measurePsf.makePsfCandidates.kernelSize = 25
+        config.measurePsf.psfDeterminer["piff"].kernelSize = 25
   singleFrameWithFakes:
     class: lsst.pipe.tasks.processCcdWithFakes.ProcessCcdWithVariableFakesTask
     config:
