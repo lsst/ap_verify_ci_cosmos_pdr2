@@ -31,6 +31,13 @@ tasks:
       doUseFilterTransmission: false
       doUseSensorTransmission: false
       doUseAtmosphereTransmission: false
+  characterizeImage:
+    class: lsst.pipe.tasks.characterizeImage.CharacterizeImageTask
+    # We want a larger psf kernel, to include the calibFlux 12 pixel radius.
+    config:
+      python: |
+        config.measurePsf.makePsfCandidates.kernelSize = 25
+        config.measurePsf.psfDeterminer["piff"].kernelSize = 25
   calibrate:
     class: lsst.pipe.tasks.calibrate.CalibrateTask
     config:
