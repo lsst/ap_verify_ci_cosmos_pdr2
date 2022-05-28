@@ -10157,14 +10157,14 @@ data:
   run: sso/cached
   records:
   - dataset_id:
-    - !uuid '65e6e6d7-41aa-4cc8-96d2-8a7a1ba7d0ef'
+    - !uuid '3bcbc645-6ae2-4c0d-be68-ad8ad8c3803f'
     data_id:
     - instrument: HSC
       visit: 59150
     path: sso/cached/visitSsObjects/20160307/g/HSC-G/59150/visitSsObjects_HSC_g_HSC-G_59150_sso_cached.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'fe20f3ec-442c-402c-9946-7abafbae319a'
+    - !uuid '87297025-294e-459b-9feb-4ef2a60ff873'
     data_id:
     - instrument: HSC
       visit: 59160

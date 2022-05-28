@@ -1,3 +1,4 @@
 description: Pipeline for downloading solar system ephemerides given raw images
+instrument: lsst.obs.subaru.HyperSuprimeCam
 tasks:
   SkyBotEphemerisQuery: lsst.ap.association.skyBotEphemerisQuery.SkyBotEphemerisQueryTask
