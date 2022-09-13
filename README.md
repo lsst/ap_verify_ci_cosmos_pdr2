@@ -1,10 +1,16 @@
 `ap_verify_ci_cosmos_pdr2`
 ==========================
 
-Data from COSMOS PDR2 to test basic functionality of alert production.
+Data from the 2016 COSMOS survey, processed in the PDR2 run in May 2019, to test basic functionality of alert production.
 
-Contains HSC visits arbitrarily chosen from the second data release's ultradeep fields.
+https://hsc-release.mtk.nao.ac.jp/doc/index.php/sample-page/pdr2/
+
+Contains HSC visits arbitrarily chosen from the second data release's ultradeep fields (`tract=9813` with `skymap=hsc_rings_v1`), from pointing 1527 in the `SSP_UDEEP_COSMOS` field.
 Because the data have not been selected in any way, this dataset may not be suitable for scientific validation.
+This dataset contains the following dataIds, both in the HSC-G filter:
+
+* visit=59150, detector=50
+* visit=59160, detector=51
 
 Relevant Files and Directories
 ------------------------------
