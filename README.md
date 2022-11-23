@@ -40,7 +40,7 @@ Usage
 This dataset is not included in `lsst_distrib` and is not available through `newinstall.sh`.
 However, it can be installed explicitly with the [LSST Software Build Tool](https://developer.lsst.io/stack/lsstsw.html) or by cloning directly:
 
-    git clone https://github.com/lsst/<dataset>/
-    setup -r <dataset>
+    git clone https://github.com/lsst/ap_verify_ci_cosmos_pdr2/
+    setup -r ap_verify_ci_cosmos_psr2
 
 See the Science Pipelines documentation for more detailed instructions on [installing datasets](https://pipelines.lsst.io/modules/lsst.ap.verify/datasets-install.html) and [running `ap_verify`](https://pipelines.lsst.io/modules/lsst.ap.verify/running.html).
