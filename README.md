@@ -9,8 +9,10 @@ Contains HSC visits arbitrarily chosen from the second data release's ultradeep 
 Because the data have not been selected in any way, this dataset may not be suitable for scientific validation.
 This dataset contains the following dataIds, both in the HSC-G filter:
 
-* visit=59150, detector=50
-* visit=59160, detector=51
+* visit 59134, detectors 0, 4, 5
+* visit 59142, detectors 0, 5, 11
+* visit 59150, detectors 50, 58
+* visit 59160, detectors 43, 51
 
 Relevant Files and Directories
 ------------------------------

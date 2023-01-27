@@ -25,7 +25,10 @@ Dataset contents
 This package provides two partially overlapping images from the same night in the 2016 `COSMOS`_ survey.
 It contains:
 
-* CCDs 50 and 51 from visits 59150 and 59160, respectively, from pointing 1527 in the ``SSP_UDEEP_COSMOS`` survey field, in g band.
+* Detectors 0, 4, and 5 from visit 59134, from pointing 1527 in the ``SSP_UDEEP_COSMOS`` survey field, in g band.
+* Detectors 0, 5, and 11 from visit 59142, in the same pointing.
+* Detectors 50 and 58 from visit 59150, in the same pointing.
+* Detectors 43 and 51 from visit 59160, in the same pointing.
 * biases, darks, brighter-fatter kernels, and g-band flats and sky frames.
 * reference catalogs for Gaia and Pan-STARRS1, covering the raw images' footprint.
 * image differencing templates coadded from 2014 COSMOS data, covering the raw images' footprint.
