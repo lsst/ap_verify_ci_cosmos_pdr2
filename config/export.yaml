@@ -2028,6 +2028,12 @@ data:
       encoded: 70d0454e8553abebbf3db13cd9fff9df3f393b7f3512b7aa3f8bbe7149cbaaebbff7f8fb52a2f8df3f11a4756e7ca8ab3ffb5528091a9cebbf124e3f04c115e03f73643bf1ad97ab3f5784d31d6f9cebbf1390f8e8c016e03f4177ece754a9aa3f
 - type: collection
   collection_type: CALIBRATION
+  name: HSC/calib/DM-28636
+- type: collection
+  collection_type: CALIBRATION
+  name: HSC/calib/DM-32378
+- type: collection
+  collection_type: CALIBRATION
   name: HSC/calib/curated
 - type: collection
   collection_type: RUN
@@ -2078,6 +2084,27 @@ data:
   timespan_begin: null
   timespan_end: null
 - type: collection
+  collection_type: CALIBRATION
+  name: HSC/calib/gen2/20180117
+- type: collection
+  collection_type: RUN
+  name: HSC/calib/gen2/20180117/20160307T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: HSC/calib/gen2/20180117/20160311T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: HSC/calib/gen2/20180117/20160413T000000Z
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
   collection_type: RUN
   name: HSC/calib/unbounded
   host: null
@@ -2112,6 +2139,9 @@ data:
   name: HSC/calib
   children:
   - HSC/calib/curated
+  - HSC/calib/DM-28636
+  - HSC/calib/gen2/20180117
+  - HSC/calib/DM-32378
 - type: collection
   collection_type: CHAINED
   name: refcats
@@ -2148,6 +2178,73 @@ data:
     path: HSC/calib/unbounded/bfKernel/bfKernel_HSC_HSC_calib_unbounded.pickle
     formatter: lsst.daf.butler.formatters.pickle.PickleFormatter
 - type: dataset_type
+  name: bias
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: bias
+  run: HSC/calib/gen2/20180117/20160311T000000Z
+  records:
+  - dataset_id:
+    - !uuid 'bb179b57-ce30-4f89-8cc5-d231acdf879d'
+    data_id:
+    - instrument: HSC
+      detector: 43
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_09_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'bd8ce503-61ff-4ae3-b4ce-ef45c182b0ac'
+    data_id:
+    - instrument: HSC
+      detector: 50
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_12_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '89dcaadb-d06a-40b1-9f5d-40e458bb570e'
+    data_id:
+    - instrument: HSC
+      detector: 51
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_13_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '2f48a4cd-ae2a-41cf-a9b1-b4b4b1b58a60'
+    data_id:
+    - instrument: HSC
+      detector: 58
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_16_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'b340798b-2386-4e7c-b91f-c1a164e0e145'
+    data_id:
+    - instrument: HSC
+      detector: 11
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_37_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '3fb5f090-441f-4e83-9a97-0c202f8c7f13'
+    data_id:
+    - instrument: HSC
+      detector: 4
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_42_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '537301e4-fa36-40f3-888f-6f74b3ffe7a4'
+    data_id:
+    - instrument: HSC
+      detector: 5
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_43_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '0d899c34-f9c8-4cd2-84a4-47072de672c5'
+    data_id:
+    - instrument: HSC
+      detector: 0
+    path: HSC/calib/gen2/20180117/20160311T000000Z/bias/bias_HSC_1_53_HSC_calib_gen2_20180117_20160311T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
   name: camera
   dimensions:
   - instrument
@@ -2163,6 +2260,73 @@ data:
     - instrument: HSC
     path: HSC/calib/unbounded/camera/camera_HSC_HSC_calib_unbounded.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
+- type: dataset_type
+  name: dark
+  dimensions:
+  - instrument
+  - detector
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: dark
+  run: HSC/calib/gen2/20180117/20160413T000000Z
+  records:
+  - dataset_id:
+    - !uuid '5face530-c94f-4627-b74e-62b74c19882b'
+    data_id:
+    - instrument: HSC
+      detector: 43
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_09_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '4faed9bc-0dd6-43bf-844a-6d6ee709f7c1'
+    data_id:
+    - instrument: HSC
+      detector: 50
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_12_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e159ce29-edc6-43cf-b514-2186accc1e22'
+    data_id:
+    - instrument: HSC
+      detector: 51
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_13_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '8451d9fa-a001-432e-83f5-beb6ad5c82ff'
+    data_id:
+    - instrument: HSC
+      detector: 58
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_16_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'e346ffc7-bd96-4060-a205-b5d0042a393d'
+    data_id:
+    - instrument: HSC
+      detector: 11
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_37_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'fed6df99-b275-4c87-b10f-d0bea9ad31c3'
+    data_id:
+    - instrument: HSC
+      detector: 4
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_42_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'd1bda23a-b316-46d1-b6b8-33badf0bd8c0'
+    data_id:
+    - instrument: HSC
+      detector: 5
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_43_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '8a196e66-e575-4724-b519-81d70ed64944'
+    data_id:
+    - instrument: HSC
+      detector: 0
+    path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_53_HSC_calib_gen2_20180117_20160413T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: deepCoadd
   dimensions:
@@ -8199,6 +8363,83 @@ data:
     path: HSC/calib/curated/20161223T000000Z/defects/defects_HSC_1_56_HSC_calib_curated_20161223T000000Z.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
+  name: flat
+  dimensions:
+  - band
+  - instrument
+  - detector
+  - physical_filter
+  storage_class: ExposureF
+  is_calibration: true
+- type: dataset
+  dataset_type: flat
+  run: HSC/calib/gen2/20180117/20160307T000000Z
+  records:
+  - dataset_id:
+    - !uuid 'ad4fb16e-7900-4d4c-8ec8-29c73cad4736'
+    data_id:
+    - instrument: HSC
+      detector: 43
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_09_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '9f3b3121-e0f6-4739-81b9-f213365fb5ae'
+    data_id:
+    - instrument: HSC
+      detector: 50
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_12_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '45460c65-f793-4793-8410-f4c1b0e839bf'
+    data_id:
+    - instrument: HSC
+      detector: 51
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_13_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'ebc81a69-00af-4fd3-9a77-050817d0032c'
+    data_id:
+    - instrument: HSC
+      detector: 58
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_16_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'b31fda2a-c720-40ed-a20b-1abb0c29b4b8'
+    data_id:
+    - instrument: HSC
+      detector: 11
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_37_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '33eb9f5a-403b-409e-a8c6-dfb2a0d0bd9d'
+    data_id:
+    - instrument: HSC
+      detector: 4
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_42_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '7769f6e9-6c8c-42c0-b7c7-33b17f5487c7'
+    data_id:
+    - instrument: HSC
+      detector: 5
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_43_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'd4efa914-0a6a-498d-a129-8d50142521b9'
+    data_id:
+    - instrument: HSC
+      detector: 0
+      physical_filter: HSC-G
+    path: HSC/calib/gen2/20180117/20160307T000000Z/flat/g/HSC-G/flat_HSC_g_HSC-G_1_53_HSC_calib_gen2_20180117_20160307T000000Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
   name: gaia
   dimensions:
   - htm7
@@ -11065,3 +11306,43 @@ data:
     - !uuid 'a2c01ad4-7a3a-462b-bb93-40b3845d36ec'
     - !uuid '58bd9d6a-d5e7-4106-8e28-102155085eed'
     - !uuid '785b0baa-c414-4ec3-8646-7e9664884189'
+- type: associations
+  collection: HSC/calib/gen2/20180117
+  collection_type: CALIBRATION
+  validity_ranges:
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2016-02-24 00:00:00.000000000'
+      end: !butler_time/tai/iso '2016-03-22 00:00:00.000000000'
+    dataset_ids:
+    - !uuid 'd4efa914-0a6a-498d-a129-8d50142521b9'
+    - !uuid '33eb9f5a-403b-409e-a8c6-dfb2a0d0bd9d'
+    - !uuid '7769f6e9-6c8c-42c0-b7c7-33b17f5487c7'
+    - !uuid 'b31fda2a-c720-40ed-a20b-1abb0c29b4b8'
+    - !uuid 'ad4fb16e-7900-4d4c-8ec8-29c73cad4736'
+    - !uuid '9f3b3121-e0f6-4739-81b9-f213365fb5ae'
+    - !uuid '45460c65-f793-4793-8410-f4c1b0e839bf'
+    - !uuid 'ebc81a69-00af-4fd3-9a77-050817d0032c'
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2016-02-24 00:00:00.000000000'
+      end: !butler_time/tai/iso '2016-03-26 00:00:00.000000000'
+    dataset_ids:
+    - !uuid '0d899c34-f9c8-4cd2-84a4-47072de672c5'
+    - !uuid '3fb5f090-441f-4e83-9a97-0c202f8c7f13'
+    - !uuid '537301e4-fa36-40f3-888f-6f74b3ffe7a4'
+    - !uuid 'b340798b-2386-4e7c-b91f-c1a164e0e145'
+    - !uuid 'bb179b57-ce30-4f89-8cc5-d231acdf879d'
+    - !uuid 'bd8ce503-61ff-4ae3-b4ce-ef45c182b0ac'
+    - !uuid '89dcaadb-d06a-40b1-9f5d-40e458bb570e'
+    - !uuid '2f48a4cd-ae2a-41cf-a9b1-b4b4b1b58a60'
+  - timespan: !lsst.daf.butler.Timespan
+      begin: !butler_time/tai/iso '2016-02-29 00:00:00.000000000'
+      end: !butler_time/tai/iso '2016-05-10 00:00:00.000000000'
+    dataset_ids:
+    - !uuid '8a196e66-e575-4724-b519-81d70ed64944'
+    - !uuid 'fed6df99-b275-4c87-b10f-d0bea9ad31c3'
+    - !uuid 'd1bda23a-b316-46d1-b6b8-33badf0bd8c0'
+    - !uuid 'e346ffc7-bd96-4060-a205-b5d0042a393d'
+    - !uuid '5face530-c94f-4627-b74e-62b74c19882b'
+    - !uuid '4faed9bc-0dd6-43bf-844a-6d6ee709f7c1'
+    - !uuid 'e159ce29-edc6-43cf-b514-2186accc1e22'
+    - !uuid '8451d9fa-a001-432e-83f5-beb6ad5c82ff'

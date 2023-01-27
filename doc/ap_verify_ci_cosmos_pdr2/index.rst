@@ -29,7 +29,7 @@ It contains:
 * Detectors 0, 5, and 11 from visit 59142, in the same pointing.
 * Detectors 50 and 58 from visit 59150, in the same pointing.
 * Detectors 43 and 51 from visit 59160, in the same pointing.
-* biases, darks, brighter-fatter kernels, and g-band flats and sky frames.
+* biases, darks, brighter-fatter kernels, and g-band flats.
 * reference catalogs for Gaia and Pan-STARRS1, covering the raw images' footprint.
 * image differencing templates coadded from 2014 COSMOS data, covering the raw images' footprint.
 
