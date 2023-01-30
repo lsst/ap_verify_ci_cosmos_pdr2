@@ -92,6 +92,7 @@ def _make_repo_with_instruments(repo_dir, instruments):
     """
     config = Butler.makeRepo(repo_dir)
     repo = Butler(config, writeable=True)
+    logging.debug("Temporary repo has universe version %d.", repo.dimensions.version)
     for instrument in instruments:
         instrument.register(repo.registry)
     return repo
@@ -112,12 +113,10 @@ def _ingest_raws(repo, raw_dir, run):
     run : `str`
         The name of the run into which to import the raws.
     """
-    raws = glob.glob(os.path.join(raw_dir, '**', '*.fits.gz'), recursive=True)
-    # explicit config workaround for DM-971
+    raws = glob.glob(os.path.join(raw_dir, '**', '*.fits*'), recursive=True)
     ingester = lsst.obs.base.RawIngestTask(butler=repo, config=lsst.obs.base.RawIngestConfig())
     ingester.run(raws, run=run)
     exposures = set(repo.registry.queryDataIds(["exposure"]))
-    # explicit config workaround for DM-971
     definer = lsst.obs.base.DefineVisitsTask(butler=repo, config=lsst.obs.base.DefineVisitsConfig())
     definer.run(exposures)
 
@@ -211,6 +210,7 @@ with tempfile.TemporaryDirectory() as workspace:
     _get_ephem(workspace, RAW_RUN, DEST_RUN)
     temp_repo.registry.refresh()    # Pipeline added dataset types
     preloaded = Butler(DEST_DIR, writeable=True)
+    logging.debug("Preloaded repo has universe version %d.", preloaded.dimensions.version)
     logging.info("Transferring ephemerides to dataset...")
     _transfer_ephems(EPHEM_DATASET, temp_repo, workspace, DEST_RUN, preloaded)
 
