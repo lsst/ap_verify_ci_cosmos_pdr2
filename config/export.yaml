@@ -1,6 +1,6 @@
 description: Butler Data Repository Export
 version: 1.0.2
-universe_version: 0
+universe_version: 3
 universe_namespace: daf_butler
 data:
 - type: dimension
@@ -8,6 +8,7 @@ data:
   records:
   - name: HSC
     visit_max: 21474800
+    visit_system: 0
     exposure_max: 21474800
     detector_max: 200
     class_name: lsst.obs.subaru.HyperSuprimeCam
@@ -766,12 +767,6 @@ data:
     region: !<lsst.sphgeom.ConvexPolygon>
       encoded: 701f49172fb089ebbffd416963e047e03f22da8d4822dd983f748955c6dc00ecbfd7f213e3c3eede3f6f79884d22dd983f4e833497bef8ebbf0eb3fe207ce5de3f474dc0300f6eab3f7fc00f009281ebbfb9cf35823c43e03f4921422b0f6eab3f
 - type: dimension
-  element: visit_system
-  records:
-  - instrument: HSC
-    id: 0
-    name: one-to-one
-- type: dimension
   element: exposure
   records:
   - instrument: HSC
@@ -784,6 +779,8 @@ data:
     observation_reason: science
     day_obs: 20160307
     seq_num: 59150
+    seq_start: 59150
+    seq_end: 59150
     group_name: '59150'
     group_id: 59150
     target_name: SSP-UDeep-COSMOS
@@ -791,7 +788,9 @@ data:
     tracking_ra: 149.96643749999996
     tracking_dec: 2.2202916666666668
     sky_angle: 270.0
+    azimuth: null
     zenith_angle: 33.74398292
+    has_simulated: false
     datetime_begin: !butler_time/tai/iso '2016-03-07 07:23:47.995000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 07:28:50.097000000'
   - instrument: HSC
@@ -804,6 +803,8 @@ data:
     observation_reason: science
     day_obs: 20160307
     seq_num: 59160
+    seq_start: 59160
+    seq_end: 59160
     group_name: '59160'
     group_id: 59160
     target_name: SSP-UDeep-COSMOS
@@ -811,7 +812,9 @@ data:
     tracking_ra: 150.18157499999998
     tracking_dec: 2.2800083333333334
     sky_angle: 270.0
+    azimuth: null
     zenith_angle: 28.29241715
+    has_simulated: false
     datetime_begin: !butler_time/tai/iso '2016-03-07 07:51:38.930000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 07:56:40.930000000'
 - type: dimension
@@ -865,13 +868,14 @@ data:
   - instrument: HSC
     id: 59150
     physical_filter: HSC-G
-    visit_system: 0
     name: HSCA05915000
     day_obs: 20160307
+    seq_num: 59150
     exposure_time: 300.0
     target_name: SSP-UDeep-COSMOS
     observation_reason: science
     science_program: o16406
+    azimuth: null
     zenith_angle: 33.74398292
     region: !<lsst.sphgeom.ConvexPolygon>
       encoded: 703122cac5c094ebbf6b2076ddf634e03f51a7a5eecf39993fd9f870cf9ca3ebbf5a32f7df9f1be03f6c5dd3b75217993f63e4efa033bfebbf6f361c0ad7d7df3ffd5cd7614115993fb67669e0c3cdebbf8a2a6821c5a4df3fc0344c04f234993fe41c6cf143dbebbf17d2c4c8b473df3fc90418eed6ee9a3fcd7e238510e2ebbfbe7c07339c58df3f89b1f47bf82e9e3fa9718ab80fe8ebbf3e07c22bc53fdf3f4330951a4fcaa03f53a5ad09e4e7ebbf67dee0ee893edf3f8e12468e40a0a13ff6ee992cd8e7ebbfef518e6b513edf3f741e5024decba13f8be85e04a0e7ebbffc516f59883ddf3fbca66771e278a23fa2011fcc8fe7ebbf3d115b565b3ddf3f80a02e0e38a4a23f3cdd9e6a44e7ebbff2da7797c03cdf3f56c27dadb152a33fa7ca3fc42ee7ebbfa1507eaba13cdf3f9ef6aa27437ea33f3091ea39d2e6ebbf511db2dd303cdf3f9896fcc5db2ca43ff507a2a7b7e6ebbf64139f851e3cdf3f40132a618558a43fc49eb78448e6ebbf15e82c23df3bdf3f105015775906a53f7bb80d952ae6ebbf9150cd90d33bdf3fc284ce6a3132a53f498f9271a9e5ebbfc5d04ddbc13bdf3f1faa604ce8dfa53fef5f861a88e5ebbfe68b22e7c13bdf3f1a94e7e43f0aa63f2534ca70cce4ebbf84627063f53bdf3f5fbcc56a6ce1a63feac84beefcdcebbf5085bf09a852df3f652135c7c093a83f6d3d875c73d4ebbfdff8073db66bdf3fcf52c9bc7433aa3f4faa0fb606c6ebbfd9748008b39bdf3fcc99e96d0c10ab3f546b03f35eb7ebbf36fc61ccc5cedf3f7be6f2e19c20ab3fd4816b09c69bebbf4f1538941c17e03fc6dfa28a1220ab3fa26f581efc8cebbf76fad71f7e30e03f4ccac579440fab3f0dbd04356c7febbf0eb42acbe648e03f664acdefbd31aa3fafa7e9c09a78ebbf0b537896eb56e03fdd9f3eb15c91a83f204a0e7aac72ebbf57d30e995463e03f369aa29e44dfa63f4fa428def172ebbfe97fdd9a0564e03f9255df9b3e09a63fc65deae10173ebbf44794e502464e03fcca925664adea53f07ad21a84873ebbf2f7959cb9064e03f8831696d7831a53f39af7ffc5b73ebbf7142379ba864e03f959504ffd605a53ff786c218af73ebbf74b7e486f864e03f768359f33058a43f482b27e8c373ebbf665b728b0b65e03f53e0c75f9a2ca43fd4e66c442274ebbfc8c875354065e03f02ad7da4767ea33f02c63f453b74ebbf0044b0004a65e03fe463e8a4d252a33ff02d1fd1a274ebbfbae1c1e16565e03ff38675b9fea4a23ff6a8a0b8be74ebbf9628af506865e03fdf5f23d89079a23f6838c0963175ebbf54c02f2f6765e03fd0b2be4fb2cca13f24fb17db4f75ebbfdd68f41a6365e03fa7ff762e8fa1a13f45882cd0ee75ebbfbc36405e3965e03fda6a5572bdcba03f902c1caeaf7debbf8a7e9c87dd59e03f7b08a472ff329e3f6fd3dfd34286ebbf1a26cd7fd64ce03f0edc4df4eef39a3f
@@ -880,13 +884,14 @@ data:
   - instrument: HSC
     id: 59160
     physical_filter: HSC-G
-    visit_system: 0
     name: HSCA05916000
     day_obs: 20160307
+    seq_num: 59160
     exposure_time: 300.0
     target_name: SSP-UDeep-COSMOS
     observation_reason: science
     science_program: o16406
+    azimuth: null
     zenith_angle: 28.29241715
     region: !<lsst.sphgeom.ConvexPolygon>
       encoded: 705fc5567b18a4ebbf253df7f2501ae03f2d71646cf04a9a3f7db46d62dcb2ebbf88a52eddeb00e03fb56fc3c374289a3f9aabfc4f45ceebbfc281dd2a3aa2df3f55d51c8063269a3f53e475c2bcdcebbff59bff160c6fdf3fd3beaba812469a3f01ca210622eaebbfd0f0c336de3ddf3f07f06677f2ff9b3fd778d18bdbf0ebbf32ebe4b4b122df3fdf9324440c409f3f2b45ac81c8f6ebbf9b63a5fbc709df3fe0bb6f8fd452a13fcc18fa2299f6ebbf0d1303878908df3fc5fb4709c428a23fbb8037898cf6ebbff77d6d615008df3fcacc8b356154a23f7040a17f51f6ebbf621015dd8407df3f9fbf1dd66301a33f3427469140f6ebbfc2f749415707df3f36015105b92ca33f31e2505ff2f5ebbf212fdc2eba06df3f4eb37ee230dba33fb313c108dcf5ebbf9da797b39a06df3f75fe11eac106a43ff772b4c17cf5ebbfd234a7b22706df3faab5a4b358b5a43fe3aaef8461f5ebbfbd1f53d41406df3fa0ef76d701e1a43fddfdeebfeff4ebbf128ca865d305df3f50d5bb08d48ea53f48086028d1f4ebbf560cb852c705df3f4dc7e47fabbaa53ff01737794df4ebbf7e1003b4b305df3f8b1f156b6068a63f7c7d6c852bf4ebbfe1912c4cb305df3f216dee86b792a63fa5bbd0d76cf3ebbfc4dda39fe405df3fd5129186e169a73f60d5fbf8a1ebebbfae9f870b9f1cdf3f75506b35311ca93f1bcc48721ee3ebbf754a15b8b635df3ff2b03a53e0bbaa3fbdf8c6b1c5d4ebbfa11de87fcb65df3fd43f67f17598ab3ff4c8254436c6ebbf5d7a8f12fa98df3f22cc3ecb06a9ab3f8bbe7149cbaaebbff7f8fb52a2f8df3f11a4756e7ca8ab3ffb5528091a9cebbf124e3f04c115e03f73643bf1ad97ab3fd2b00fd1a48eebbf8fb7e283382ee03f3967f07629baaa3ffca7fbdfe687ebbfa356634a473ce03f48056808cd19a93f6d2a88d10a82ebbf01a82694b948e03f4589359eb967a73fa02b5af85382ebbf0bde41196c49e03f553fbc1db691a63fb6cfb0b86482ebbf71186e1a8b49e03f82ad5766c266a63f89d02467ae82ebbfad0d1ac0f849e03f02e41e61f2b9a53fcaabf673c282ebbf3c49f6d9104ae03f9266996e518ea53f6a200e601883ebbf218238e6614ae03f7d190b47ade0a43fa90422e32d83ebbfb2734333754ae03fa6a0922a17b5a43f7597d5f68e83ebbf18ba22f4aa4ae03fc1a6c042f506a43f68b7a9a2a883ebbfe774f303b54ae03f1cd40eb651dba33fb938f8cc1284ebbfc1916ef2d14ae03fab520f8b7f2da33fa0ef9d572f84ebbf95bcb8a2d44ae03fd3609d171202a33f85e8b7b4a484ebbf277cc581d44ae03f128c7e3b3555a23f4771db94c384ebbf56fd05acd04ae03feb93e582122aa23f4c8c79796585ebbfe1b37c1ca84ae03f1cafaec04254a13fcd7808b1218debbfc04af370483fe03f2c0c85f312449f3fe5301d50ae95ebbfb8ac2ba33c32e03f2e78cf480a059c3f
@@ -896,11 +901,9 @@ data:
   element: visit_definition
   records:
   - instrument: HSC
-    visit_system: 0
     exposure: 59150
     visit: 59150
   - instrument: HSC
-    visit_system: 0
     exposure: 59160
     visit: 59160
 - type: dimension
@@ -10264,7 +10267,6 @@ data:
   - band
   - instrument
   - physical_filter
-  - visit_system
   - visit
   storage_class: DataFrame
   is_calibration: false
