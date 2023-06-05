@@ -11481,28 +11481,28 @@ data:
   run: sso/cached
   records:
   - dataset_id:
-    - !uuid '8372337e-5bf1-4378-8400-baeac754198f'
+    - !uuid '24cb6bbc-afde-4972-b2f3-33dd92e77f3d'
     data_id:
     - instrument: HSC
       visit: 59134
     path: sso/cached/visitSsObjects/20160307/g/HSC-G/59134/visitSsObjects_HSC_g_HSC-G_59134_sso_cached.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '1596947c-5b5e-4170-be7b-0dcea3267e9d'
+    - !uuid '169c1140-4044-46f2-b645-137e87b06631'
     data_id:
     - instrument: HSC
       visit: 59142
     path: sso/cached/visitSsObjects/20160307/g/HSC-G/59142/visitSsObjects_HSC_g_HSC-G_59142_sso_cached.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'fb597138-70f8-4594-8b98-4f47356559f8'
+    - !uuid '5a505ede-94fa-46d0-aa12-6a2a56b06d30'
     data_id:
     - instrument: HSC
       visit: 59150
     path: sso/cached/visitSsObjects/20160307/g/HSC-G/59150/visitSsObjects_HSC_g_HSC-G_59150_sso_cached.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '2c4e9644-60fa-4224-9514-4a32cbfdee8e'
+    - !uuid '59d1087c-7f84-4cbd-a06c-008f7409986c'
     data_id:
     - instrument: HSC
       visit: 59160
