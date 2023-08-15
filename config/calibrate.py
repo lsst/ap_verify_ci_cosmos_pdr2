@@ -1,3 +1,4 @@
+# TODO DM-40388: Remove this file, once the new pipeline is vetted.
 # Config override for lsst.pipe.tasks.calibrate.CalibrateTask
 # Ensure we're using the refcats that are actually in this dataset, regardless
 # of what task defaults are.
