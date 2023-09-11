@@ -3339,7 +3339,7 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
-  name: templates/deep
+  name: u/elhoward/DM-38242/templates/20230517T191130Z
   host: null
   timespan_begin: null
   timespan_end: null
@@ -3363,9 +3363,14 @@ data:
   - sso/cached
 - type: collection
   collection_type: CHAINED
+  name: templates/goodSeeing
+  children:
+  - u/elhoward/DM-38242/templates/20230517T191130Z
+- type: collection
+  collection_type: CHAINED
   name: HSC/defaults
   children:
-  - templates/deep
+  - templates/goodSeeing
   - skymaps
   - HSC/calib
   - refcats
@@ -3535,73 +3540,6 @@ data:
     - instrument: HSC
       detector: 0
     path: HSC/calib/gen2/20180117/20160413T000000Z/dark/dark_HSC_1_53_HSC_calib_gen2_20180117_20160413T000000Z.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-- type: dataset_type
-  name: deepCoadd
-  dimensions:
-  - band
-  - skymap
-  - tract
-  - patch
-  storage_class: ExposureF
-  is_calibration: false
-- type: dataset
-  dataset_type: deepCoadd
-  run: templates/deep
-  records:
-  - dataset_id:
-    - !uuid '792381c5-a6de-4b54-b0d8-9f960c23a8b1'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 41
-    path: templates/deep/deepCoadd/9813/41/g/deepCoadd_9813_41_g_hsc_rings_v1_templates_deep.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-  - dataset_id:
-    - !uuid 'cdc3d678-ee61-4da0-99cc-06bf28e1973b'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 42
-    path: templates/deep/deepCoadd/9813/42/g/deepCoadd_9813_42_g_hsc_rings_v1_templates_deep.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-  - dataset_id:
-    - !uuid '53881411-fd01-4285-8597-9b964287bc9c'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 43
-    path: templates/deep/deepCoadd/9813/43/g/deepCoadd_9813_43_g_hsc_rings_v1_templates_deep.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-  - dataset_id:
-    - !uuid 'bbde973c-3ed6-4722-b3a2-fd6dd1f2c31d'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 50
-    path: templates/deep/deepCoadd/9813/50/g/deepCoadd_9813_50_g_hsc_rings_v1_templates_deep.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-  - dataset_id:
-    - !uuid '6a688cd5-d98b-4105-8632-36cc44ad97e1'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 51
-    path: templates/deep/deepCoadd/9813/51/g/deepCoadd_9813_51_g_hsc_rings_v1_templates_deep.fits
-    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
-  - dataset_id:
-    - !uuid '51e07ba1-5c09-4076-aa91-ba224037f3cb'
-    data_id:
-    - band: g
-      skymap: hsc_rings_v1
-      tract: 9813
-      patch: 52
-    path: templates/deep/deepCoadd/9813/52/g/deepCoadd_9813_52_g_hsc_rings_v1_templates_deep.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
 - type: dataset_type
   name: defects
@@ -10061,6 +9999,73 @@ data:
     path: refcats/DM-28636/gaia_dr2_20200414/gaia_dr2_20200414_232376_refcats_DM-28636.fits
     formatter: lsst.obs.base.formatters.fitsGeneric.FitsGenericFormatter
 - type: dataset_type
+  name: goodSeeingCoadd
+  dimensions:
+  - band
+  - skymap
+  - tract
+  - patch
+  storage_class: ExposureF
+  is_calibration: false
+- type: dataset
+  dataset_type: goodSeeingCoadd
+  run: u/elhoward/DM-38242/templates/20230517T191130Z
+  records:
+  - dataset_id:
+    - !uuid 'deb736f1-31ac-4d42-9c8c-a4edb27c1526'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 41
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/41/g/goodSeeingCoadd_9813_41_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'd1b9e497-f2ff-4946-8bd2-c0a0aa8b9c1a'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 42
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/42/g/goodSeeingCoadd_9813_42_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'eb71164e-bfce-4d19-a9c6-ddd840abad00'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 43
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/43/g/goodSeeingCoadd_9813_43_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid '25b21763-7d75-4485-a859-7dcd14918fdf'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 50
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/50/g/goodSeeingCoadd_9813_50_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'f063fdf8-42a7-4beb-8127-0942de1c6759'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 51
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/51/g/goodSeeingCoadd_9813_51_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+  - dataset_id:
+    - !uuid 'a3351dc5-d799-4e17-a824-7751d9197a52'
+    data_id:
+    - band: g
+      skymap: hsc_rings_v1
+      tract: 9813
+      patch: 52
+    path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/52/g/goodSeeingCoadd_9813_52_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
+    formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
   name: ps1_pv3_3pi_20170110
   dimensions:
   - htm7
@@ -10483,7 +10488,7 @@ data:
   run: skymaps
   records:
   - dataset_id:
-    - !uuid 'bdd777dc-097d-4021-adc1-07aa353978ca'
+    - !uuid '6e7fc928-0dc3-4e1b-ae63-5fb63be46216'
     data_id:
     - skymap: hsc_rings_v1
     path: skymaps/skyMap/skyMap_hsc_rings_v1_skymaps.pickle
