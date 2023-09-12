@@ -6,7 +6,7 @@ description: Instrumented Alert Production pipeline specialized for CI-Cosmos-PD
 # overrides, and importing both pipelines can't merge changes to the same task.
 
 imports:
-  - location: $AP_VERIFY_DIR/pipelines/HyperSuprimeCam/ApVerifyCalibrateImage.yaml
+  - location: $AP_VERIFY_DIR/pipelines/HSC/ApVerifyCalibrateImage.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
