@@ -1,12 +1,15 @@
-# Config override for lsst.pipe.tasks.calibrate.CalibrateTask
+# Config override for lsst.pipe.tasks.calibrateImage.CalibrateImageTask
 # Ensure we're using the refcats that are actually in this dataset, regardless
 # of what task defaults are.
+import os.path
+import lsst.utils
+hsc_config_dir = os.path.join(lsst.utils.getPackageDir("obs_subaru"), "config")
 
-# Use gaia for astrometry (phot_g_mean for everything, as that is the broadest
-# band with the most depth).
-config.connections.astrometry_ref_cat = "gaia_dr2_20200414"
-config.astrometry_ref_loader.anyFilterMapsToThis = "phot_g_mean"
-config.astrometry_ref_loader.filterMap = {}
+# Use ps1 for astrometry (the HSC default).
+config.connections.astrometry_ref_cat = "ps1_pv3_3pi_20170110"
+config.astrometry_ref_loader.load(os.path.join(hsc_config_dir, "filterMap.py"))
+# Use the filterMap instead of the "any" filter (as is used for Gaia).
+config.astrometry_ref_loader.anyFilterMapsToThis = None
 
-# Use panstarrs for photometry (grizy filters).
+# Use panstarrs for photometry (the HSC default).
 config.connections.photometry_ref_cat = "ps1_pv3_3pi_20170110"
