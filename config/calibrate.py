@@ -8,11 +8,11 @@ from lsst.utils import getPackageDir
 
 hscDir = os.path.join(getPackageDir("obs_subaru"), "config")
 
-# Use gaia for astrometry (phot_g_mean for everything, as that is the broadest
-# band with the most depth).
-config.connections.astromRefCat = "gaia_dr2_20200414"
-config.astromRefObjLoader.anyFilterMapsToThis = "phot_g_mean"
-config.astromRefObjLoader.filterMap = {}
+# Use ps1 for astrometry (the HSC default).
+config.connections.astromRefCat = "ps1_pv3_3pi_20170110"
+config.astromRefObjLoader.load(os.path.join(hscDir, "filterMap.py"))
+# Use the filterMap instead of the "any" filter (as is used for Gaia).
+config.astromRefObjLoader.anyFilterMapsToThis = None
 
 # Use panstarrs for photometry (grizy filters).
 config.connections.photoRefCat = "ps1_pv3_3pi_20170110"
