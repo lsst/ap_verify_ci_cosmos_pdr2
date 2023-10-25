@@ -47,7 +47,7 @@ FIELDS = [SkyCoord(149.8594, 2.2225, unit="deg"),  # visit 59150, detector 50
           ]
 FIELD_RADIUS = 2.0  # degrees
 
-REFCATS = {"gaia_dr2_20200414", "ps1_pv3_3pi_20170110", }
+REFCATS = {"ps1_pv3_3pi_20170110", }
 
 
 ########################################
