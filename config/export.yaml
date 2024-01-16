@@ -3321,6 +3321,12 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
+  name: pretrained_models/rbResnet50-DC2
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
   name: refcats/DM-28636
   host: null
   timespan_begin: null
@@ -3353,6 +3359,11 @@ data:
   - HSC/calib/DM-32378
 - type: collection
   collection_type: CHAINED
+  name: models
+  children:
+  - pretrained_models/rbResnet50-DC2
+- type: collection
+  collection_type: CHAINED
   name: refcats
   children:
   - refcats/DM-28636
@@ -3375,6 +3386,7 @@ data:
   - HSC/calib
   - refcats
   - sso
+  - models
 - type: dataset_type
   name: bfKernel
   dimensions:
@@ -9653,6 +9665,21 @@ data:
       patch: 52
     path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/52/g/goodSeeingCoadd_9813_52_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: pretrainedModelPackage
+  dimensions: []
+  storage_class: NNModelPackagePayload
+  is_calibration: false
+- type: dataset
+  dataset_type: pretrainedModelPackage
+  run: pretrained_models/rbResnet50-DC2
+  records:
+  - dataset_id:
+    - !uuid 'fa4ac3d7-4c50-4f8b-9084-3c4f29176a27'
+    data_id:
+    - {}
+    path: pretrained_models/rbResnet50-DC2/pretrainedModelPackage/pretrainedModelPackage_pretrained_models_rbResnet50-DC2.zip
+    formatter: lsst.meas.transiNet.modelPackages.formatters.NNModelPackageFormatter
 - type: dataset_type
   name: ps1_pv3_3pi_20170110
   dimensions:
