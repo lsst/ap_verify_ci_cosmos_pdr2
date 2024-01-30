@@ -9,7 +9,7 @@ description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 # -c diaPipe:apdb.connection_timeout: 240
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/HyperSuprimeCam/ApPipeCalibrateImage.yaml
+  - location: $AP_PIPE_DIR/pipelines/HSC/ApPipeCalibrateImage.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing

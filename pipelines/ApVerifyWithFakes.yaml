@@ -6,7 +6,7 @@ description: Instrumented Alert Production pipeline specialized for CI-Cosmos-PD
 # the same task.
 
 imports:
-  - location: $AP_VERIFY_DIR/pipelines/HyperSuprimeCam/ApVerifyWithFakes.yaml
+  - location: $AP_VERIFY_DIR/pipelines/HSC/ApVerifyWithFakes.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
