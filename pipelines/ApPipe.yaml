@@ -1,4 +1,3 @@
-# TODO DM-40388: This file will replace ApPipe.yaml, once the new pipeline is vetted.
 description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 #
 # NOTES
@@ -9,7 +8,7 @@ description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 # -c diaPipe:apdb.connection_timeout: 240
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/HSC/ApPipeCalibrateImage.yaml
+  - location: $AP_PIPE_DIR/pipelines/HSC/ApPipe.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
