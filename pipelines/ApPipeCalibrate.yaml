@@ -1,4 +1,3 @@
-# TODO DM-40388: This file will replace ApPipe.yaml, once the new pipeline is vetted.
 description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 #
 # NOTES
@@ -9,7 +8,7 @@ description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 # -c diaPipe:apdb.connection_timeout: 240
 
 imports:
-  - location: $AP_PIPE_DIR/pipelines/HSC/ApPipeCalibrateImage.yaml
+  - location: $AP_PIPE_DIR/pipelines/HSC/ApPipeCalibrate.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
@@ -24,11 +23,11 @@ tasks:
       doUseFilterTransmission: false
       doUseSensorTransmission: false
       doUseAtmosphereTransmission: false
-  calibrateImage:
-    class: lsst.pipe.tasks.calibrateImage.CalibrateImageTask
+  calibrate:
+    class: lsst.pipe.tasks.calibrate.CalibrateTask
     config:
       # Use dataset's reference catalogs
-      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrateImage.py
+      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrate.py
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:

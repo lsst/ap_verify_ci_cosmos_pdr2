@@ -1,4 +1,3 @@
-# TODO DM-40388: This file will replace ApVerify.yaml, once the new pipeline is vetted.
 description: Instrumented Alert Production pipeline specialized for CI-Cosmos-PDR2
 #
 # This pipeline does not depend on the local ApPipe.yaml, because the definition
@@ -6,7 +5,7 @@ description: Instrumented Alert Production pipeline specialized for CI-Cosmos-PD
 # overrides, and importing both pipelines can't merge changes to the same task.
 
 imports:
-  - location: $AP_VERIFY_DIR/pipelines/HSC/ApVerifyCalibrateImage.yaml
+  - location: $AP_VERIFY_DIR/pipelines/HSC/ApVerifyCalibrate.yaml
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
@@ -21,11 +20,11 @@ tasks:
       doUseFilterTransmission: false
       doUseSensorTransmission: false
       doUseAtmosphereTransmission: false
-  calibrateImage:
-    class: lsst.pipe.tasks.calibrateImage.CalibrateImageTask
+  calibrate:
+    class: lsst.pipe.tasks.calibrate.CalibrateTask
     config:
       # Use dataset's reference catalogs
-      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrateImage.py
+      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrate.py
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:
