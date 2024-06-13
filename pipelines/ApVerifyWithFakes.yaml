@@ -7,9 +7,11 @@ description: Instrumented Alert Production pipeline specialized for CI-Cosmos-PD
 
 imports:
   - location: $AP_VERIFY_DIR/pipelines/HSC/ApVerifyWithFakes.yaml
+
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
+  fakesType: fakes_
 tasks:
   isr:
     class: lsst.ip.isr.IsrTask
@@ -21,20 +23,11 @@ tasks:
       doUseFilterTransmission: false
       doUseSensorTransmission: false
       doUseAtmosphereTransmission: false
-  calibrate:
-    class: lsst.pipe.tasks.calibrate.CalibrateTask
+  calibrateImage:
+    class: lsst.pipe.tasks.calibrateImage.CalibrateImageTask
     config:
       # Use dataset's reference catalogs
-      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrate.py
-  processVisitFakes:
-    class: lsst.pipe.tasks.processCcdWithFakes.ProcessCcdWithVariableFakesTask
-    config:
-      python: |
-        # Use dataset's reference catalogs
-        import os.path
-        from lsst.utils import getPackageDir
-        config.calibrate.load(os.path.join(getPackageDir("ap_verify_ci_cosmos_pdr2"),
-                                           "config", "calibrate.py"))
+      file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrateImage.py
   rbClassify:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:

@@ -33,6 +33,7 @@ REPO_DIR="${SCRIPT_DIR}/../preloaded/"
 INST_CLASS=lsst.obs.subaru.HyperSuprimeCam
 INST_NAME=HSC
 
+
 ########################################
 # Repository creation
 
@@ -50,4 +51,5 @@ CURATED_CALIB="${STD_CALIB}/curated"
 
 butler write-curated-calibrations "$REPO_DIR" $INST_CLASS \
     --collection "$CURATED_CALIB"
+butler collection-chain "$REPO_DIR" "$STD_CALIB" "$CURATED_CALIB"
 echo "Added curated calibrations to ${REPO_DIR}."
