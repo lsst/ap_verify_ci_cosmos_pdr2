@@ -11,7 +11,6 @@ imports:
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
-  # fakesType: fakes_
 tasks:
   isr:
     class: lsst.ip.isr.IsrTask
