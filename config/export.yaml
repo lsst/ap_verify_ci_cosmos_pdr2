@@ -3321,6 +3321,12 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
+  name: fake_injection_catalog
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
   name: pretrained_models/rbResnet50-DC2
   host: null
   timespan_begin: null
@@ -3387,6 +3393,7 @@ data:
   - refcats
   - sso
   - models
+  - fake_injection_catalog
 - type: dataset_type
   name: bfKernel
   dimensions:
@@ -9665,6 +9672,479 @@ data:
       patch: 52
     path: u/elhoward/DM-38242/templates/20230517T191130Z/goodSeeingCoadd/9813/52/g/goodSeeingCoadd_9813_52_g_hsc_rings_v1_u_elhoward_DM-38242_templates_20230517T191130Z.fits
     formatter: lsst.obs.base.formatters.fitsExposure.FitsExposureFormatter
+- type: dataset_type
+  name: injection_catalog
+  dimensions:
+  - band
+  - htm7
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: injection_catalog
+  run: fake_injection_catalog
+  records:
+  - dataset_id:
+    - !uuid 'd9d0f36d-9f7a-46e2-a4f6-f2f84c285cc0'
+    data_id:
+    - band: g
+      htm7: 231828
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231828_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '0ec7e7f9-ec7d-4225-bd0f-28017422eefc'
+    data_id:
+    - band: g
+      htm7: 231829
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231829_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '06595ef1-56b3-4cba-859c-25c0f5d95d70'
+    data_id:
+    - band: g
+      htm7: 231830
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231830_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '212736b6-a7b5-4564-ad8d-68228bbafc6a'
+    data_id:
+    - band: g
+      htm7: 231831
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231831_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '9b36b4b3-1f8e-44f7-9adb-42c56d657bd8'
+    data_id:
+    - band: g
+      htm7: 231834
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231834_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '28149e6b-22ca-44ab-b0ba-aaf84895691e'
+    data_id:
+    - band: g
+      htm7: 231836
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231836_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'fa22f102-be4b-4d21-b83b-0efc19205a6b'
+    data_id:
+    - band: g
+      htm7: 231838
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231838_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '56fb4d10-69f3-407b-8d41-646021c1e698'
+    data_id:
+    - band: g
+      htm7: 231839
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231839_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '74ab515b-a68e-4943-9591-158d6c3716f7'
+    data_id:
+    - band: g
+      htm7: 231856
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231856_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'd7f00ea9-d76f-43c2-9237-c985f4b030e9'
+    data_id:
+    - band: g
+      htm7: 231857
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231857_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '3df4c9f2-35de-4cd0-a432-bdac35feb3e5'
+    data_id:
+    - band: g
+      htm7: 231858
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231858_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '8c4688ce-9ba4-40ef-8368-3d259b7f8da0'
+    data_id:
+    - band: g
+      htm7: 231859
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231859_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '09380c11-b87f-4446-8c3e-71145e8e2b0a'
+    data_id:
+    - band: g
+      htm7: 231861
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231861_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '4e8cba52-e7f3-4e8a-be4f-3c30921873cf'
+    data_id:
+    - band: g
+      htm7: 231862
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231862_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'ea9be93e-183d-4521-a040-9bbb176750a0'
+    data_id:
+    - band: g
+      htm7: 231863
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231863_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '29bdd39c-b4a9-47b2-975d-a526f059e74d'
+    data_id:
+    - band: g
+      htm7: 231865
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231865_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '3d4a8e7f-d78c-4e11-863c-d2ea0c6ce2ed'
+    data_id:
+    - band: g
+      htm7: 231866
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231866_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'b79694e2-dfcd-4be2-a880-054651267b4a'
+    data_id:
+    - band: g
+      htm7: 231867
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231867_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'f3bd64b8-02e2-42f4-a857-8622d2314f2f'
+    data_id:
+    - band: g
+      htm7: 231868
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231868_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '87fe23f8-4deb-4a96-b7a9-1aac05a80c59'
+    data_id:
+    - band: g
+      htm7: 231869
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231869_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '4549d6ed-ddd3-48d9-a4bf-169e5a093c3b'
+    data_id:
+    - band: g
+      htm7: 231870
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231870_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'f4e75ae8-6aad-48c1-b19a-12e99e732e00'
+    data_id:
+    - band: g
+      htm7: 231871
+    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231871_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '94cb077d-605e-4ad7-a679-b16cebae8a1b'
+    data_id:
+    - band: i
+      htm7: 231828
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231828_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '6f956a5f-38e1-4fef-98a7-14134f184681'
+    data_id:
+    - band: i
+      htm7: 231829
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231829_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'a064238c-7290-477d-bc38-4d49fb3aa8fe'
+    data_id:
+    - band: i
+      htm7: 231830
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231830_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '63c79ee9-e1cc-4cca-a66c-a72138016869'
+    data_id:
+    - band: i
+      htm7: 231831
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231831_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'a248d807-2d64-415d-9f78-aa2ca8c3f83a'
+    data_id:
+    - band: i
+      htm7: 231834
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231834_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'e00b68bb-ce3c-4b69-bd34-4df6b451cbbc'
+    data_id:
+    - band: i
+      htm7: 231836
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231836_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '769414e8-ff80-4a98-902e-98166b0e6f16'
+    data_id:
+    - band: i
+      htm7: 231838
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231838_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '6635087f-a7d1-4aa9-ae8a-3c5f973f2242'
+    data_id:
+    - band: i
+      htm7: 231839
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231839_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'b7e8d96d-4a85-4ba8-bc10-4b27239d614c'
+    data_id:
+    - band: i
+      htm7: 231856
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231856_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '75615217-bf7b-4981-9ba9-0320b32a0c5f'
+    data_id:
+    - band: i
+      htm7: 231857
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231857_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '0285ef81-6b2f-46d9-9207-3c59ccd6b1dd'
+    data_id:
+    - band: i
+      htm7: 231858
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231858_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '8207b92f-7128-410e-8d01-11f0d9d55c42'
+    data_id:
+    - band: i
+      htm7: 231859
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231859_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'dc67edb3-e039-4c7d-9714-349a9fa33fcd'
+    data_id:
+    - band: i
+      htm7: 231861
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231861_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '317796dc-a22c-4c64-9fe8-436bf777a831'
+    data_id:
+    - band: i
+      htm7: 231862
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231862_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '943e7e82-8409-4e74-bee9-bc98ea44558f'
+    data_id:
+    - band: i
+      htm7: 231863
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231863_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '34dd5b91-ddc3-4c8c-8ffb-cb84f3f3f7a5'
+    data_id:
+    - band: i
+      htm7: 231865
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231865_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '228d097e-e130-457f-8612-e84d0338e4c9'
+    data_id:
+    - band: i
+      htm7: 231866
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231866_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '4280965c-3a13-49e7-b10b-258b48b8bb67'
+    data_id:
+    - band: i
+      htm7: 231867
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231867_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '6ba7bc7c-8a48-4b4c-93ed-7fc173c1e83c'
+    data_id:
+    - band: i
+      htm7: 231868
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231868_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'bceade1b-5d21-419f-ba08-afc6fe66eeb2'
+    data_id:
+    - band: i
+      htm7: 231869
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231869_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'f8f7c3b9-3250-4762-bbdb-85bed3c5b167'
+    data_id:
+    - band: i
+      htm7: 231870
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231870_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '253a0f00-17dc-4b50-8f0a-32d09d97d42a'
+    data_id:
+    - band: i
+      htm7: 231871
+    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231871_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '4922d5b8-c08c-4e82-837f-a6c25d7bc160'
+    data_id:
+    - band: r
+      htm7: 231828
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231828_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'cf511a37-9cd3-442b-8901-18e627c45859'
+    data_id:
+    - band: r
+      htm7: 231829
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231829_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '73f1ffa0-3a3a-4ebe-9faf-a111ab18d6be'
+    data_id:
+    - band: r
+      htm7: 231830
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231830_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'f86fb19a-5ed2-4180-b1d0-bba5cd46c071'
+    data_id:
+    - band: r
+      htm7: 231831
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231831_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '22105ec1-3da9-4243-be6f-4abaa1813617'
+    data_id:
+    - band: r
+      htm7: 231834
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231834_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'f4894e05-61bc-412c-a4fa-112ea24810d1'
+    data_id:
+    - band: r
+      htm7: 231836
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231836_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'de865ef8-0b20-4dcd-a26d-af33d9ad409b'
+    data_id:
+    - band: r
+      htm7: 231838
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231838_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '06ece9db-35fa-4589-81bd-13180f9d9f56'
+    data_id:
+    - band: r
+      htm7: 231839
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231839_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '62e93042-af4f-40aa-8a60-08ded01c76eb'
+    data_id:
+    - band: r
+      htm7: 231856
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231856_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '15c98230-8161-4cde-be1f-039cb5f5f95e'
+    data_id:
+    - band: r
+      htm7: 231857
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231857_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'b15427c7-f90b-4e06-a16f-3554864122b6'
+    data_id:
+    - band: r
+      htm7: 231858
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231858_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'b151a274-73ea-4dd0-b94f-e37145c9ffe5'
+    data_id:
+    - band: r
+      htm7: 231859
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231859_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '73ab0cb0-eef1-4522-b26f-3fd08bffc2c9'
+    data_id:
+    - band: r
+      htm7: 231861
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231861_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'ed4b4085-cb44-42a4-8648-5f1c0fa4021f'
+    data_id:
+    - band: r
+      htm7: 231862
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231862_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '6584f71f-a6a5-4afe-bdb0-355b81a08dc0'
+    data_id:
+    - band: r
+      htm7: 231863
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231863_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'ca8d51f0-917d-4d1c-929a-489b08f8538a'
+    data_id:
+    - band: r
+      htm7: 231865
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231865_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '9652e7fe-1995-4f61-b684-ca14decbbad5'
+    data_id:
+    - band: r
+      htm7: 231866
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231866_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'e21fb1eb-7495-45bc-a7bd-8328b1fbf449'
+    data_id:
+    - band: r
+      htm7: 231867
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231867_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'fd6120fd-8150-411b-98de-9b8331a8aa37'
+    data_id:
+    - band: r
+      htm7: 231868
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231868_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'e88fb14a-c36a-45c6-9d87-a7c2fd3755de'
+    data_id:
+    - band: r
+      htm7: 231869
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231869_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid 'e40b1734-cf31-4a09-9c86-0a55b8bf8c8b'
+    data_id:
+    - band: r
+      htm7: 231870
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231870_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '08ff6a9c-4880-41dc-8072-5db13b72d3e1'
+    data_id:
+    - band: r
+      htm7: 231871
+    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231871_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: pretrainedModelPackage
   dimensions: []
