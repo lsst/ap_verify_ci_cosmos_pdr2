@@ -78,6 +78,10 @@ def _export_for_copy(repo, export_dir):
         # well (DefineVisitsTask won't add them back in).
         contents.saveDimensionData("exposure",
                                    butler.registry.queryDimensionRecords("exposure"))
+        contents.saveDimensionData("group",
+                                   butler.registry.queryDimensionRecords("group"))
+        contents.saveDimensionData("instrument",
+                                   butler.registry.queryDimensionRecords("instrument"))
         contents.saveDimensionData("visit_definition",
                                    butler.registry.queryDimensionRecords("visit_definition"))
         contents.saveDimensionData("visit_detector_region",
