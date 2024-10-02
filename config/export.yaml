@@ -1,6 +1,6 @@
 description: Butler Data Repository Export
 version: 1.0.2
-universe_version: 4
+universe_version: 7
 universe_namespace: daf_butler
 data:
 - type: dimension
@@ -21,6 +21,13 @@ data:
     tract_max: 18938
     patch_nx_max: 9
     patch_ny_max: 9
+- type: dimension
+  element: day_obs
+  records:
+  - instrument: HSC
+    id: 20160307
+    datetime_begin: !butler_time/tai/iso '2016-03-07 00:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2016-03-08 00:00:00.000000000'
 - type: dimension
   element: detector
   records:
@@ -697,6 +704,17 @@ data:
     raft: '0'
     purpose: FOCUS
 - type: dimension
+  element: group
+  records:
+  - instrument: HSC
+    name: '59134'
+  - instrument: HSC
+    name: '59142'
+  - instrument: HSC
+    name: '59150'
+  - instrument: HSC
+    name: '59160'
+- type: dimension
   element: physical_filter
   records:
   - instrument: HSC
@@ -771,18 +789,17 @@ data:
   records:
   - instrument: HSC
     id: 59134
+    day_obs: 20160307
+    group: '59134'
     physical_filter: HSC-G
     obs_id: HSCA05913400
     exposure_time: 180.0
     dark_time: 180.0
     observation_type: science
     observation_reason: science
-    day_obs: 20160307
     seq_num: 59134
     seq_start: 59134
     seq_end: 59134
-    group_name: '59134'
-    group_id: 59134
     target_name: SSP-Deep-COSMOS
     science_program: o16406
     tracking_ra: 149.45749166666664
@@ -791,22 +808,22 @@ data:
     azimuth: 111.029026
     zenith_angle: 39.18337617
     has_simulated: false
+    can_see_sky: true
     datetime_begin: !butler_time/tai/iso '2016-03-07 06:54:45.067000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 06:57:46.945000000'
   - instrument: HSC
     id: 59142
+    day_obs: 20160307
+    group: '59142'
     physical_filter: HSC-G
     obs_id: HSCA05914200
     exposure_time: 180.0
     dark_time: 180.0
     observation_type: science
     observation_reason: science
-    day_obs: 20160307
     seq_num: 59142
     seq_start: 59142
     seq_end: 59142
-    group_name: '59142'
-    group_id: 59142
     target_name: SSP-Deep-COSMOS
     science_program: o16406
     tracking_ra: 149.4992083333333
@@ -815,22 +832,22 @@ data:
     azimuth: 114.00419014
     zenith_angle: 36.0631884
     has_simulated: false
+    can_see_sky: true
     datetime_begin: !butler_time/tai/iso '2016-03-07 07:09:19.901000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 07:12:21.898000000'
   - instrument: HSC
     id: 59150
+    day_obs: 20160307
+    group: '59150'
     physical_filter: HSC-G
     obs_id: HSCA05915000
     exposure_time: 300.0
     dark_time: 300.0
     observation_type: science
     observation_reason: science
-    day_obs: 20160307
     seq_num: 59150
     seq_start: 59150
     seq_end: 59150
-    group_name: '59150'
-    group_id: 59150
     target_name: SSP-UDeep-COSMOS
     science_program: o16406
     tracking_ra: 149.96643749999996
@@ -839,22 +856,22 @@ data:
     azimuth: null
     zenith_angle: 33.74398292
     has_simulated: false
+    can_see_sky: true
     datetime_begin: !butler_time/tai/iso '2016-03-07 07:23:47.995000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 07:28:50.097000000'
   - instrument: HSC
     id: 59160
+    day_obs: 20160307
+    group: '59160'
     physical_filter: HSC-G
     obs_id: HSCA05916000
     exposure_time: 300.0
     dark_time: 300.0
     observation_type: science
     observation_reason: science
-    day_obs: 20160307
     seq_num: 59160
     seq_start: 59160
     seq_end: 59160
-    group_name: '59160'
-    group_id: 59160
     target_name: SSP-UDeep-COSMOS
     science_program: o16406
     tracking_ra: 150.18157499999998
@@ -863,6 +880,7 @@ data:
     azimuth: null
     zenith_angle: 28.29241715
     has_simulated: false
+    can_see_sky: true
     datetime_begin: !butler_time/tai/iso '2016-03-07 07:51:38.930000000'
     datetime_end: !butler_time/tai/iso '2016-03-07 07:56:40.930000000'
 - type: dimension
@@ -915,9 +933,9 @@ data:
   records:
   - instrument: HSC
     id: 59134
+    day_obs: 20160307
     physical_filter: HSC-G
     name: HSCA05913400
-    day_obs: 20160307
     seq_num: 59134
     exposure_time: 180.0
     target_name: SSP-Deep-COSMOS
@@ -931,9 +949,9 @@ data:
     datetime_end: !butler_time/tai/iso '2016-03-07 06:57:46.945000000'
   - instrument: HSC
     id: 59142
+    day_obs: 20160307
     physical_filter: HSC-G
     name: HSCA05914200
-    day_obs: 20160307
     seq_num: 59142
     exposure_time: 180.0
     target_name: SSP-Deep-COSMOS
@@ -947,9 +965,9 @@ data:
     datetime_end: !butler_time/tai/iso '2016-03-07 07:12:21.898000000'
   - instrument: HSC
     id: 59150
+    day_obs: 20160307
     physical_filter: HSC-G
     name: HSCA05915000
-    day_obs: 20160307
     seq_num: 59150
     exposure_time: 300.0
     target_name: SSP-UDeep-COSMOS
@@ -963,9 +981,9 @@ data:
     datetime_end: !butler_time/tai/iso '2016-03-07 07:28:50.097000000'
   - instrument: HSC
     id: 59160
+    day_obs: 20160307
     physical_filter: HSC-G
     name: HSCA05916000
-    day_obs: 20160307
     seq_num: 59160
     exposure_time: 300.0
     target_name: SSP-UDeep-COSMOS
@@ -11572,6 +11590,7 @@ data:
   dimensions:
   - band
   - instrument
+  - day_obs
   - physical_filter
   - visit
   storage_class: DataFrame
