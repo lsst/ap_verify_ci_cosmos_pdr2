@@ -25,6 +25,9 @@ fields and observation times.
 
 Running this script allows for updates to the ephemerides to be incorporated
 into the dataset.
+
+This script takes no command-line arguments; it infers everything it needs from
+the `preloaded/` repository.
 """
 
 import glob
@@ -36,7 +39,7 @@ import tempfile
 
 import lsst.log
 import lsst.sphgeom
-from lsst.daf.butler import Butler, FileDataset
+from lsst.daf.butler import Butler, CollectionType
 import lsst.obs.base
 
 
@@ -46,11 +49,12 @@ lsst.log.configure_pylog_MDC("DEBUG", MDC_class=None)
 
 # Avoid explicit references to dataset package to maximize portability.
 SCRIPT_DIR = os.path.abspath(os.path.dirname(__file__))
-PIPE_DIR = os.path.join(SCRIPT_DIR, "..", "pipelines")
-RAW_DIR = os.path.join(SCRIPT_DIR, "..", "raw")
+PIPE_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "pipelines"))
+RAW_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "raw"))
 RAW_RUN = "raw"
 EPHEM_DATASET = "visitSsObjects"
-DEST_DIR = os.path.join(SCRIPT_DIR, "..", "preloaded")
+DEST_DIR = os.path.normpath(os.path.join(SCRIPT_DIR, "..", "preloaded"))
+DEST_COLLECTION = "sso"
 DEST_RUN = "sso/cached"
 
 
@@ -213,5 +217,7 @@ with tempfile.TemporaryDirectory() as workspace:
     logging.debug("Preloaded repo has universe version %d.", preloaded.dimensions.version)
     logging.info("Transferring ephemerides to dataset...")
     _transfer_ephems(EPHEM_DATASET, temp_repo, workspace, DEST_RUN, preloaded)
+preloaded.registry.registerCollection(DEST_COLLECTION, CollectionType.CHAINED)
+preloaded.registry.setCollectionChain(DEST_COLLECTION, [DEST_RUN])
 
-logging.info("Solar system catalogs copied to %s:%s", DEST_DIR, DEST_RUN)
+logging.info("Solar system catalogs copied to %s:%s", DEST_DIR, DEST_COLLECTION)
