@@ -32,6 +32,7 @@ It contains:
 * biases, darks, brighter-fatter kernels, and g-band flats.
 * reference catalogs for Pan-STARRS1, covering the raw images' footprint.
 * image differencing templates coadded from 2014 COSMOS data, covering the raw images' footprint.
+* mock APDB catalogs based on processing the raw images in order
 * the rbResnet50-DC2 pretrained machine learning model for real/bogus classification
 
 .. _ap_verify_ci_cosmos_pdr2-contributing:
