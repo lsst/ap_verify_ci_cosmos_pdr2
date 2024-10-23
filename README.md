@@ -23,7 +23,7 @@ path                  | description
 `config`              | Dataset-specific configs to help Stack code work with this dataset.
 `pipelines`           | Dataset-specific pipelines to run on this dataset.
 `dataIds.list`        | List of dataIds in this repo. For use in running Tasks. Currently set to run all Ids.
-`preloaded`           | A Gen 3 Butler repository containing HSC master calibs from the 2016 COSMOS campaign (or, where necessary, from 2015), coadded images for use as differencing templates, PS1 reference catalog in HTM format for regions overlapping any visit in the dataset, and a pretrained machine learning model for real/bogus classification.
+`preloaded`           | A Gen 3 Butler repository containing HSC master calibs from the 2016 COSMOS campaign (or, where necessary, from 2015), coadded images for use as differencing templates, PS1 reference catalog in HTM format for regions overlapping any visit in the dataset, mock APDB outputs based on the raw images, and a pretrained machine learning model for real/bogus classification.
 `scripts`             | Scripts and data for generating this dataset.
 
 
