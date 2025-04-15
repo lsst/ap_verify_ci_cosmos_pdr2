@@ -9,6 +9,7 @@ tasks:
   isr:
     class: lsst.ip.isr.IsrTask
     config:
+      connections.outputExposure: post_isr_image
       # Ignore missing calibrations
       doBrighterFatter: false
       doAttachTransmissionCurve: false
@@ -21,6 +22,11 @@ tasks:
     config:
       # Use dataset's reference catalogs
       file: $AP_VERIFY_CI_COSMOS_PDR2_DIR/config/calibrateImage.py
+  rewarpTemplate:
+    # TODO: remove in DM-50200 when goodSeeingCoadd is renamed to template_coadd
+    class: lsst.ip.diffim.getTemplate.GetTemplateTask
+    config:
+      connections.coaddExposures: goodSeeingCoadd
   computeReliability:
     class: lsst.meas.transiNet.RBTransiNetTask
     config:
