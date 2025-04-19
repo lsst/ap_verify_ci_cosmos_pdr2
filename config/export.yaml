@@ -7837,280 +7837,280 @@ data:
     path: sso/cached/preloaded_SsObjects/59160/preloaded_SsObjects_HSC_59160_1_13_sso_cached.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaForcedSources
+  name: preloaded_dia_forced_source
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaForcedSources
+  dataset_type: preloaded_dia_forced_source
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '3fb76a3d-0e71-454a-a3ff-48e3d0aa01ff'
+    - !uuid '63a1e63c-7a08-40f8-9a97-62ee5e9ebc4d'
     data_id:
     - instrument: HSC
       detector: 4
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59134/preloaded_diaForcedSources_HSC_59134_1_42_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '577ea9d4-7c8c-4eb0-af73-869dbcdb10ab'
+    - !uuid 'fafa5a8b-ea83-43cb-9dca-b1a0ff8cdbad'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59134/preloaded_diaForcedSources_HSC_59134_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '214c4ffa-5e70-4a02-95f3-1531e7b88afd'
+    - !uuid '03ad8f92-71cc-45af-826d-5df4c138c49b'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59134/preloaded_diaForcedSources_HSC_59134_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '9901c74a-c5cd-4fad-b59f-f729da8fe73b'
+    - !uuid 'cc8af4ba-2040-4cc4-8d63-80faa2f0fedb'
     data_id:
     - instrument: HSC
       detector: 11
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59142/preloaded_diaForcedSources_HSC_59142_1_37_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '402a640a-5159-4af5-b938-9c04844dbc0f'
+    - !uuid '2995bae9-daa1-4b40-b8b0-f982a79b0e9e'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59142/preloaded_diaForcedSources_HSC_59142_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '3e35629e-e509-4419-ab10-108d36a055ff'
+    - !uuid '6383731d-0415-44fd-b159-0ef951606f94'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59142/preloaded_diaForcedSources_HSC_59142_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'dc3439cc-6138-4e1b-8908-3255c1af6b57'
+    - !uuid '7d679fca-088e-4622-a56e-61ce2a847f45'
     data_id:
     - instrument: HSC
       detector: 50
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59150/preloaded_diaForcedSources_HSC_59150_1_12_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'ac56cf75-beb9-47a1-814a-e7cdf73b69f1'
+    - !uuid '5603a13e-9bb6-4534-8af2-f32a942fd345'
     data_id:
     - instrument: HSC
       detector: 58
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59150/preloaded_diaForcedSources_HSC_59150_1_16_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '1dfd2b63-c0d1-4a5b-9482-ada134fb401e'
+    - !uuid 'ca05e224-0e58-44cf-b03f-01dc2ca0c3ec'
     data_id:
     - instrument: HSC
       detector: 43
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59160/preloaded_diaForcedSources_HSC_59160_1_09_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59160/preloaded_dia_forced_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'd10d04fb-7414-4ed9-88aa-9eb77e52fed2'
+    - !uuid 'bfbdb5c2-b624-4f93-9f5c-1c3fdfc47ab5'
     data_id:
     - instrument: HSC
       detector: 51
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaForcedSources/59160/preloaded_diaForcedSources_HSC_59160_1_13_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_forced_source/59160/preloaded_dia_forced_source_HSC_59160_1_13_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaObjects
+  name: preloaded_dia_object
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaObjects
+  dataset_type: preloaded_dia_object
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '8f2603cf-83d1-412c-87d4-bf6d230e3d11'
+    - !uuid 'f35048bd-1f85-4caf-80fc-b418d46f5be0'
     data_id:
     - instrument: HSC
       detector: 4
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59134/preloaded_diaObjects_HSC_59134_1_42_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'f4b1ed6e-257f-40bc-b87f-7b57bde9f2d2'
+    - !uuid '975d8f02-430f-4b4d-a521-ea7665346663'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59134/preloaded_diaObjects_HSC_59134_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'b56af127-0228-497d-ab27-5e15483753c8'
+    - !uuid '07b85d7c-5a79-43f0-9a5b-680715854b2a'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59134/preloaded_diaObjects_HSC_59134_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '5f1c59e9-6bfd-46d7-ade5-dbd300eb07a9'
+    - !uuid '0a56783f-a2e0-497e-aafb-2f9497c34f76'
     data_id:
     - instrument: HSC
       detector: 11
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59142/preloaded_diaObjects_HSC_59142_1_37_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '4286f110-2e9a-40cc-afcb-3230054eda85'
+    - !uuid 'bffb3a65-2206-423b-8566-1b03f42abcdc'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59142/preloaded_diaObjects_HSC_59142_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '3ff97b19-0dc1-4f23-9803-1af05a3e0f71'
+    - !uuid 'c71743ec-bfe8-4013-bc35-353601e70c3d'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59142/preloaded_diaObjects_HSC_59142_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'c3ba0b65-f85b-4594-bc55-bd16dcee688f'
+    - !uuid '52825367-a686-4106-99e0-1139240c8ace'
     data_id:
     - instrument: HSC
       detector: 50
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59150/preloaded_diaObjects_HSC_59150_1_12_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'e1a4741e-7cb2-4182-b228-c4a68810137f'
+    - !uuid '81e37641-1f65-4ec1-ba02-f66acb4e1b4c'
     data_id:
     - instrument: HSC
       detector: 58
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59150/preloaded_diaObjects_HSC_59150_1_16_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '07b99798-5d94-4165-8784-64e04fcb3951'
+    - !uuid '5305798b-209a-4ace-b76b-4a61841ac554'
     data_id:
     - instrument: HSC
       detector: 43
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59160/preloaded_diaObjects_HSC_59160_1_09_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59160/preloaded_dia_object_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'afc8de63-bbff-41bc-b956-963e7028fdc7'
+    - !uuid '25e955c7-d351-4d09-89f8-090179a111c0'
     data_id:
     - instrument: HSC
       detector: 51
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaObjects/59160/preloaded_diaObjects_HSC_59160_1_13_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_object/59160/preloaded_dia_object_HSC_59160_1_13_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
-  name: preloaded_diaSources
+  name: preloaded_dia_source
   dimensions:
   - instrument
   - detector
   - group
-  storage_class: DataFrame
+  storage_class: ArrowAstropy
   is_calibration: false
 - type: dataset
-  dataset_type: preloaded_diaSources
+  dataset_type: preloaded_dia_source
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '365d6e35-3bc5-4112-9728-962a3323db91'
+    - !uuid 'c0f1ef87-a525-426c-b68d-566b22450dff'
     data_id:
     - instrument: HSC
       detector: 4
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaSources/59134/preloaded_diaSources_HSC_59134_1_42_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '5ea4fff1-a359-41d2-baf5-72b5c6ba879a'
+    - !uuid '17b4f2eb-4fe3-4b27-ab30-4d93f0d9ba12'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaSources/59134/preloaded_diaSources_HSC_59134_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'd11c7305-7c1e-421f-afa0-66671482d950'
+    - !uuid 'a4f30bdc-89b6-48e1-ac2b-10d7b4a5a446'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59134'
-    path: dia_catalogs/apdb/preloaded_diaSources/59134/preloaded_diaSources_HSC_59134_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'b1a84514-22cf-48f1-a19c-017bbe8849fc'
+    - !uuid '94a6bc23-882f-43d8-b47d-1605f7b73610'
     data_id:
     - instrument: HSC
       detector: 11
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaSources/59142/preloaded_diaSources_HSC_59142_1_37_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'e33e181e-0ae7-4dd9-a320-b2f981530db5'
+    - !uuid '8d1ebe78-58a8-430a-8367-2d98460dc2bd'
     data_id:
     - instrument: HSC
       detector: 5
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaSources/59142/preloaded_diaSources_HSC_59142_1_43_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'eafced03-3118-4f9d-bf4a-60da7061346b'
+    - !uuid '37d793d3-a08d-4faf-932d-f3d8b5569a3e'
     data_id:
     - instrument: HSC
       detector: 0
       group: '59142'
-    path: dia_catalogs/apdb/preloaded_diaSources/59142/preloaded_diaSources_HSC_59142_1_53_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'b772144e-7c31-4c5c-a18e-c3c0ddf18690'
+    - !uuid '281de753-9566-432f-96d7-cc752afb8861'
     data_id:
     - instrument: HSC
       detector: 50
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaSources/59150/preloaded_diaSources_HSC_59150_1_12_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '63d6ddbf-4bd9-4abf-83ed-2f3ff5159ead'
+    - !uuid 'de8bc3db-5a49-47f5-9506-91e26eb1f3d8'
     data_id:
     - instrument: HSC
       detector: 58
       group: '59150'
-    path: dia_catalogs/apdb/preloaded_diaSources/59150/preloaded_diaSources_HSC_59150_1_16_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'f6ed3374-d58f-437d-aaf4-4f21e4412966'
+    - !uuid '9990a52e-1fbc-4aba-9e5f-3d2420d6fcca'
     data_id:
     - instrument: HSC
       detector: 43
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaSources/59160/preloaded_diaSources_HSC_59160_1_09_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59160/preloaded_dia_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'bb00d318-7a0d-4ba5-a555-0166655b4376'
+    - !uuid 'b7201785-127c-4545-9c2a-8e7219920225'
     data_id:
     - instrument: HSC
       detector: 51
       group: '59160'
-    path: dia_catalogs/apdb/preloaded_diaSources/59160/preloaded_diaSources_HSC_59160_1_13_dia_catalogs_apdb.parq
+    path: dia_catalogs/apdb/preloaded_dia_source/59160/preloaded_dia_source_HSC_59160_1_13_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: pretrainedModelPackage
