@@ -2,6 +2,8 @@ description: End to end Alert Production pipeline specialized for CI-Cosmos-PDR2
 
 imports:
   - location: $AP_PIPE_DIR/pipelines/HSC/ApPipe.yaml
+    include:
+        - apPipe
 parameters:
   # Use dataset's specific templates
   coaddName: goodSeeing
