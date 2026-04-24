@@ -33,7 +33,7 @@ It contains:
 * reference catalogs for Pan-STARRS1, covering the raw images' footprint.
 * image differencing templates coadded from 2014 COSMOS data, covering the raw images' footprint.
 * mock APDB catalogs based on processing the raw images in order
-* the tac_cnn_lsstcam_2026-02-13 pretrained machine learning model for real/bogus classification
+* the v0.3 tac_cnn_lsstcam_2026-02-26 pretrained machine learning model for real/bogus classification
 
 .. _ap_verify_ci_cosmos_pdr2-contributing:
 
