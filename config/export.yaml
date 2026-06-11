@@ -22,6 +22,13 @@ data:
     patch_nx_max: 9
     patch_ny_max: 9
 - type: dimension
+  element: day_obs
+  records:
+  - instrument: HSC
+    id: 20160307
+    datetime_begin: !butler_time/tai/iso '2016-03-07 00:00:00.000000000'
+    datetime_end: !butler_time/tai/iso '2016-03-08 00:00:00.000000000'
+- type: dimension
   element: detector
   records:
   - instrument: HSC
@@ -778,6 +785,111 @@ data:
     region: !<lsst.sphgeom.ConvexPolygon>
       encoded: 701f49172fb089ebbffd416963e047e03f22da8d4822dd983f748955c6dc00ecbfd7f213e3c3eede3f6f79884d22dd983f4e833497bef8ebbf0eb3fe207ce5de3f474dc0300f6eab3f7fc00f009281ebbfb9cf35823c43e03f4921422b0f6eab3f
 - type: dimension
+  element: visit_system
+  records:
+  - instrument: HSC
+    id: 0
+    name: one-to-one
+- type: dimension
+  element: exposure
+  records:
+  - instrument: HSC
+    id: 59134
+    day_obs: 20160307
+    group: '59134'
+    physical_filter: HSC-G
+    obs_id: HSCA05913400
+    exposure_time: 180.0
+    dark_time: 180.0
+    observation_type: science
+    observation_reason: science
+    seq_num: 59134
+    seq_start: 59134
+    seq_end: 59134
+    target_name: SSP-Deep-COSMOS
+    science_program: o16406
+    tracking_ra: 149.45749166666664
+    tracking_dec: 2.926961111111111
+    sky_angle: 270.0
+    azimuth: 111.029026
+    zenith_angle: 39.18337617
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2016-03-07 06:54:45.067000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 06:57:46.945000000'
+  - instrument: HSC
+    id: 59142
+    day_obs: 20160307
+    group: '59142'
+    physical_filter: HSC-G
+    obs_id: HSCA05914200
+    exposure_time: 180.0
+    dark_time: 180.0
+    observation_type: science
+    observation_reason: science
+    seq_num: 59142
+    seq_start: 59142
+    seq_end: 59142
+    target_name: SSP-Deep-COSMOS
+    science_program: o16406
+    tracking_ra: 149.4992083333333
+    tracking_dec: 2.8853
+    sky_angle: 270.0
+    azimuth: 114.00419014
+    zenith_angle: 36.0631884
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:09:19.901000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:12:21.898000000'
+  - instrument: HSC
+    id: 59150
+    day_obs: 20160307
+    group: '59150'
+    physical_filter: HSC-G
+    obs_id: HSCA05915000
+    exposure_time: 300.0
+    dark_time: 300.0
+    observation_type: science
+    observation_reason: science
+    seq_num: 59150
+    seq_start: 59150
+    seq_end: 59150
+    target_name: SSP-UDeep-COSMOS
+    science_program: o16406
+    tracking_ra: 149.96643749999996
+    tracking_dec: 2.2202916666666668
+    sky_angle: 270.0
+    azimuth: 117.92723241
+    zenith_angle: 33.74398292
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:23:47.995000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:28:50.097000000'
+  - instrument: HSC
+    id: 59160
+    day_obs: 20160307
+    group: '59160'
+    physical_filter: HSC-G
+    obs_id: HSCA05916000
+    exposure_time: 300.0
+    dark_time: 300.0
+    observation_type: science
+    observation_reason: science
+    seq_num: 59160
+    seq_start: 59160
+    seq_end: 59160
+    target_name: SSP-UDeep-COSMOS
+    science_program: o16406
+    tracking_ra: 150.18157499999998
+    tracking_dec: 2.2800083333333334
+    sky_angle: 270.0
+    azimuth: 125.72190584
+    zenith_angle: 28.29241715
+    has_simulated: false
+    can_see_sky: true
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:51:38.930000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:56:40.930000000'
+- type: dimension
   element: patch
   records:
   - skymap: hsc_rings_v1
@@ -822,6 +934,156 @@ data:
     cell_y: 5
     region: !<lsst.sphgeom.ConvexPolygon>
       encoded: 70404675802793ebbfaf32053c562fe03f4ecd90a4bcb9a43fce6511e64ba1ebbf113a7b8c2517e03f1c59ea0deab9a43f85483a3945a0ebbf78ad18308f16e03f07e93341df79a63f84235ee02092ebbf1cd95acfbf2ee03f0093a602ae79a63f
+- type: dimension
+  element: visit
+  records:
+  - instrument: HSC
+    id: 59134
+    day_obs: 20160307
+    physical_filter: HSC-G
+    name: HSCA05913400
+    seq_num: 59134
+    exposure_time: 180.0
+    target_name: SSP-Deep-COSMOS
+    observation_reason: science
+    science_program: o16406
+    azimuth: 111.029026
+    zenith_angle: 39.18337617
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70dddca4c6f06cebbf680c3304f071e03f6dde5c3eb1eca23ffe638c36097cebbf5075b2ccbc58e03f340da2257cdba23f14a216680c98ebbfebfe39c44729e03f3c49d5eb73daa23fe87d0be2d3a6ebbf8b807499de0fe03f85c2d73843eaa23f14fb810e66b4ebbf1665c871beeedf3f7071f48713c7a33f284ee8ac0abbebbf42fa41a071d3df3f9885d602ef66a53fd34cd12cdcc0ebbf1655e0ee5ebadf3f62a769a58519a73f72f3728a8dc0ebbf03c72a08f8b8df3f9626e9e65befa73f651283847ac0ebbf04fd8d90b6b8df3f2d6d3ed2f31aa83f4c3070db25c0ebbfeaf0aecfc9b7df3f11e8ea3ae1c7a83f9f208b790ec0ebbf3bebd6d293b7df3fcddb450131f3a83f612e5c23a6bfebbfbe2d88c2d4b6df3f10a8cdb592a1a93f7433393989bfebbfe888f8b7acb6df3f16a0091d1ecda93f85cb7f850fbfebbfa2b9284417b6df3fc3afbef39d7baa3f3b141e9dedbeebbf36d92bb2fbb5df3f506e474341a7aa3f8911463a61beebbf232d217c97b5df3f2f0fe4d8fb54ab3f6c4cfde43bbeebbfb157339782b5df3f58188742cd80ab3f54e6dc529dbdebbfd25bb6c14bb5df3fcb9c7ad2692eac3f38ec57ca74bdebbff3547ab842b5df3f4b036ae6ba58ac3f783d9a5894bcebbf74dee5b947b5df3fe59f39b7c52fad3f953b5e4f61b4ebbff50041897fcbdf3f4e4528fadae1ae3f24fd17b574abebbf354bdc4d13e4df3fa084031ca740b03f944dc528ac9cebbf99b9dde3d009e03f1fcec3b7e4aeb03ff9acc4a8c78debbf38b9f1063723e03fe89d57262fb7b03f9acb8597c271ebbfdc331f86b152e03ff32e89dbe9b6b03fdc1019f7c162ebbfdfdcc1def26be03f72694a7880aeb03fe964c7532055ebbfc501c1a95284e03ff48edf5ecb3fb03f6405c2cf754eebbf857d288e7192e03f1c8858de75dfae3ffa28f221b548ebbfd66e7279f89ee03f553ffba69c2dad3f655d2a501d49ebbfb27e2d8cbf9fe03f215c5c25b857ac3fa2fd4b5a3449ebbfee5125b4e29fe03fe83a988aca2cac3f5b034f869749ebbf4dc0822261a0e03f9fa876bd1280ab3fdf48260eb249ebbff352e37d7da0e03fc33bffcf7754ab3f023a21f5214aebbfa3d3878edfa0e03f28be743deba6aa3fe6b00e013e4aebbf45b5ee20f7a0e03f16e022f25a7baa3f6887577bb94aebbf542c69163ea1e03f5f0a46ed4fcda93f8d25eecfd94aebbfeabf787a4ca1e03fc5e15c04b2a1a93fa5b297a45e4bebbf574a2fb47aa1e03fa3e2dbecf5f3a83fbbb064e7814bebbf212d33bd81a1e03f829eede58dc8a83f1db88826124cebbf209dd2f592a1e03f5d65553ec61ba83f1ce445c8374cebbf1d31a27993a1e03f1438a8b8a8f0a73f37e4a16ffb4cebbf9975ce9680a1e03fc3eafc2ef21aa73fc01a8fd61f55ebbf394a3d086296e03f6b2f15cff068a53f7bbf2521175eebbf4c0a024b9889e03fb70e06479ec9a33f
+    datetime_begin: !butler_time/tai/iso '2016-03-07 06:54:45.067000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 06:57:46.945000000'
+  - instrument: HSC
+    id: 59142
+    day_obs: 20160307
+    physical_filter: HSC-G
+    name: HSCA05914200
+    seq_num: 59142
+    exposure_time: 180.0
+    target_name: SSP-Deep-COSMOS
+    observation_reason: science
+    science_program: o16406
+    azimuth: 114.00419014
+    zenith_angle: 36.0631884
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 700e4f77153170ebbf6db71d69ef6ce03f61a484fb738da23f377b7ea6447febbf912abd47b953e03f23d37d4e3e7ca23f11086bfc3e9bebbf5869e1053f24e03fcf9dbb0d367ba23f9a592ee201aaebbf04d83d32d30ae03f797d32e7058ba23f1e8421b491b7ebbff751af30a5e4df3fd098c076d867a33f907843f237beebbf1f35f1ce5ac9df3ff2830889b707a53f45a11f770bc4ebbfb251a3144bb0df3f97a9c53052baa63fdc1610d8bec3ebbfdec7c3d1e6aedf3fb0e1dd472a90a73fa753e53bacc3ebbf739c0be5a5aedf3ff064c894c2bba73f2d1d883859c3ebbf53d6904ebbaddf3f89aac886b168a83f0901c14042c3ebbff72563dd85addf3f0db138b10194a83faa984598dbc2ebbf67493303c9acdf3f08f4f2fe6442a93f236f261abfc2ebbfeefa1187a1acdf3fe3e5e5cdf06da93fd0074f1847c2ebbff8ba34500eacdf3fceb5da4a721caa3f151f589d25c2ebbf23c8ca4ef3abdf3f32d078051648aa3f2d1cffee9ac1ebbfb897545a91abdf3fd32f024cd2f5aa3fd0ce360876c1ebbfe6ddcb077dabdf3f1ac37524a421ab3f045c832ed9c0ebbf7e4c4f7a48abdf3fa8cda47142cfab3f868cbf11b1c0ebbf4a9e1f0040abdf3fc286a7f393f9ab3f78a955c8d2bfebbf14545bdf47abdf3f5995aafca0d0ac3f6834462ba6b7ebbff46930dd87c1df3f21b3fb6fba82ae3ff97ba805c0aeebbf0e5013dd23dadf3fe2a1c0f81811b03f554d011efe9febbf3838c339dd04e03fcb60df89577fb03f669dc1841e91ebbf2f36153c461ee03f6d7275d9a187b03fa2781b4c2275ebbf81639ef2c54de03ffcfc69905c87b03f4b5adc352666ebbfbb313ffd0967e03f6fc1614ef37eb03f8bb8a0e58658ebbf3f4c8e036b7fe03fe1a77b403d10b03f5fe9a1d7da51ebbfee86bfb0888de03f6265f2625580ae3f09a75026184cebbf413a7b1e0e9ae03fffe1eefe77ceac3ffadfbc547e4cebbf902472dad39ae03f82787d4891f8ab3fc7e441f7944cebbfb96139bdf69ae03f4c26293ea3cdab3f83a3987ff64cebbfcffd0014749be03fdb0e49b6e920ab3f8f0ad29c104debbfc4848428909be03f40699a5a4ef5aa3f1101b5d87e4debbf2ea5f21df19be03f14439c17c047aa3f398d3b799a4debbfc84f4469089ce03f8e866d612f1caa3f31611a42144eebbf9a6da1404e9ce03f859a74b7226ea93f12ff7029344eebbf9ef7ba5c5c9ce03f0c0e97668442a93f20cbde48b74eebbf39a50d77899ce03f8a046ab7c694a83f390a971dda4eebbf0140e137909ce03f9d14244c5e69a83fe67a8aa4684febbf50256e50a09ce03f7122791b95bca73f1df3bad78d4febbf1a100d8ca09ce03fa3813c357791a73f189c1f574f50ebbf9ef9b1418c9ce03f2c31fdd5bebba63f8c3a95516d58ebbf8557bc9e6991e03f81ac3f6fb909a53f502803105e61ebbf186b13c29b84e03f6ebda049636aa33f
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:09:19.901000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:12:21.898000000'
+  - instrument: HSC
+    id: 59150
+    day_obs: 20160307
+    physical_filter: HSC-G
+    name: HSCA05915000
+    seq_num: 59150
+    exposure_time: 300.0
+    target_name: SSP-UDeep-COSMOS
+    observation_reason: science
+    science_program: o16406
+    azimuth: 117.92723241
+    zenith_angle: 33.74398292
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 703122cac5c094ebbf6b2076ddf634e03f51a7a5eecf39993fd9f870cf9ca3ebbf5a32f7df9f1be03f6c5dd3b75217993f63e4efa033bfebbf6f361c0ad7d7df3ffd5cd7614115993fb67669e0c3cdebbf8a2a6821c5a4df3fc0344c04f234993fe41c6cf143dbebbf17d2c4c8b473df3fc90418eed6ee9a3fcd7e238510e2ebbfbe7c07339c58df3f89b1f47bf82e9e3fa9718ab80fe8ebbf3e07c22bc53fdf3f4330951a4fcaa03f53a5ad09e4e7ebbf67dee0ee893edf3f8e12468e40a0a13ff6ee992cd8e7ebbfef518e6b513edf3f741e5024decba13f8be85e04a0e7ebbffc516f59883ddf3fbca66771e278a23fa2011fcc8fe7ebbf3d115b565b3ddf3f80a02e0e38a4a23f3cdd9e6a44e7ebbff2da7797c03cdf3f56c27dadb152a33fa7ca3fc42ee7ebbfa1507eaba13cdf3f9ef6aa27437ea33f3091ea39d2e6ebbf511db2dd303cdf3f9896fcc5db2ca43ff507a2a7b7e6ebbf64139f851e3cdf3f40132a618558a43fc49eb78448e6ebbf15e82c23df3bdf3f105015775906a53f7bb80d952ae6ebbf9150cd90d33bdf3fc284ce6a3132a53f498f9271a9e5ebbfc5d04ddbc13bdf3f1faa604ce8dfa53fef5f861a88e5ebbfe68b22e7c13bdf3f1a94e7e43f0aa63f2534ca70cce4ebbf84627063f53bdf3f5fbcc56a6ce1a63feac84beefcdcebbf5085bf09a852df3f652135c7c093a83f6d3d875c73d4ebbfdff8073db66bdf3fcf52c9bc7433aa3f4faa0fb606c6ebbfd9748008b39bdf3fcc99e96d0c10ab3f546b03f35eb7ebbf36fc61ccc5cedf3f7be6f2e19c20ab3fd4816b09c69bebbf4f1538941c17e03fc6dfa28a1220ab3fa26f581efc8cebbf76fad71f7e30e03f4ccac579440fab3f0dbd04356c7febbf0eb42acbe648e03f664acdefbd31aa3fafa7e9c09a78ebbf0b537896eb56e03fdd9f3eb15c91a83f204a0e7aac72ebbf57d30e995463e03f369aa29e44dfa63f4fa428def172ebbfe97fdd9a0564e03f9255df9b3e09a63fc65deae10173ebbf44794e502464e03fcca925664adea53f07ad21a84873ebbf2f7959cb9064e03f8831696d7831a53f39af7ffc5b73ebbf7142379ba864e03f959504ffd605a53ff786c218af73ebbf74b7e486f864e03f768359f33058a43f482b27e8c373ebbf665b728b0b65e03f53e0c75f9a2ca43fd4e66c442274ebbfc8c875354065e03f02ad7da4767ea33f02c63f453b74ebbf0044b0004a65e03fe463e8a4d252a33ff02d1fd1a274ebbfbae1c1e16565e03ff38675b9fea4a23ff6a8a0b8be74ebbf9628af506865e03fdf5f23d89079a23f6838c0963175ebbf54c02f2f6765e03fd0b2be4fb2cca13f24fb17db4f75ebbfdd68f41a6365e03fa7ff762e8fa1a13f45882cd0ee75ebbfbc36405e3965e03fda6a5572bdcba03f902c1caeaf7debbf8a7e9c87dd59e03f7b08a472ff329e3f6fd3dfd34286ebbf1a26cd7fd64ce03f0edc4df4eef39a3f
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:23:47.995000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:28:50.097000000'
+  - instrument: HSC
+    id: 59160
+    day_obs: 20160307
+    physical_filter: HSC-G
+    name: HSCA05916000
+    seq_num: 59160
+    exposure_time: 300.0
+    target_name: SSP-UDeep-COSMOS
+    observation_reason: science
+    science_program: o16406
+    azimuth: 125.72190584
+    zenith_angle: 28.29241715
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 705fc5567b18a4ebbf253df7f2501ae03f2d71646cf04a9a3f7db46d62dcb2ebbf88a52eddeb00e03fb56fc3c374289a3f9aabfc4f45ceebbfc281dd2a3aa2df3f55d51c8063269a3f53e475c2bcdcebbff59bff160c6fdf3fd3beaba812469a3f01ca210622eaebbfd0f0c336de3ddf3f07f06677f2ff9b3fd778d18bdbf0ebbf32ebe4b4b122df3fdf9324440c409f3f2b45ac81c8f6ebbf9b63a5fbc709df3fe0bb6f8fd452a13fcc18fa2299f6ebbf0d1303878908df3fc5fb4709c428a23fbb8037898cf6ebbff77d6d615008df3fcacc8b356154a23f7040a17f51f6ebbf621015dd8407df3f9fbf1dd66301a33f3427469140f6ebbfc2f749415707df3f36015105b92ca33f31e2505ff2f5ebbf212fdc2eba06df3f4eb37ee230dba33fb313c108dcf5ebbf9da797b39a06df3f75fe11eac106a43ff772b4c17cf5ebbfd234a7b22706df3faab5a4b358b5a43fe3aaef8461f5ebbfbd1f53d41406df3fa0ef76d701e1a43fddfdeebfeff4ebbf128ca865d305df3f50d5bb08d48ea53f48086028d1f4ebbf560cb852c705df3f4dc7e47fabbaa53ff01737794df4ebbf7e1003b4b305df3f8b1f156b6068a63f7c7d6c852bf4ebbfe1912c4cb305df3f216dee86b792a63fa5bbd0d76cf3ebbfc4dda39fe405df3fd5129186e169a73f60d5fbf8a1ebebbfae9f870b9f1cdf3f75506b35311ca93f1bcc48721ee3ebbf754a15b8b635df3ff2b03a53e0bbaa3fbdf8c6b1c5d4ebbfa11de87fcb65df3fd43f67f17598ab3ff4c8254436c6ebbf5d7a8f12fa98df3f22cc3ecb06a9ab3f8bbe7149cbaaebbff7f8fb52a2f8df3f11a4756e7ca8ab3ffb5528091a9cebbf124e3f04c115e03f73643bf1ad97ab3fd2b00fd1a48eebbf8fb7e283382ee03f3967f07629baaa3ffca7fbdfe687ebbfa356634a473ce03f48056808cd19a93f6d2a88d10a82ebbf01a82694b948e03f4589359eb967a73fa02b5af85382ebbf0bde41196c49e03f553fbc1db691a63fb6cfb0b86482ebbf71186e1a8b49e03f82ad5766c266a63f89d02467ae82ebbfad0d1ac0f849e03f02e41e61f2b9a53fcaabf673c282ebbf3c49f6d9104ae03f9266996e518ea53f6a200e601883ebbf218238e6614ae03f7d190b47ade0a43fa90422e32d83ebbfb2734333754ae03fa6a0922a17b5a43f7597d5f68e83ebbf18ba22f4aa4ae03fc1a6c042f506a43f68b7a9a2a883ebbfe774f303b54ae03f1cd40eb651dba33fb938f8cc1284ebbfc1916ef2d14ae03fab520f8b7f2da33fa0ef9d572f84ebbf95bcb8a2d44ae03fd3609d171202a33f85e8b7b4a484ebbf277cc581d44ae03f128c7e3b3555a23f4771db94c384ebbf56fd05acd04ae03feb93e582122aa23f4c8c79796585ebbfe1b37c1ca84ae03f1cafaec04254a13fcd7808b1218debbfc04af370483fe03f2c0c85f312449f3fe5301d50ae95ebbfb8ac2ba33c32e03f2e78cf480a059c3f
+    datetime_begin: !butler_time/tai/iso '2016-03-07 07:51:38.930000000'
+    datetime_end: !butler_time/tai/iso '2016-03-07 07:56:40.930000000'
+- type: dimension
+  element: visit_definition
+  records:
+  - instrument: HSC
+    exposure: 59134
+    visit: 59134
+  - instrument: HSC
+    exposure: 59142
+    visit: 59142
+  - instrument: HSC
+    exposure: 59150
+    visit: 59150
+  - instrument: HSC
+    exposure: 59160
+    visit: 59160
+- type: dimension
+  element: visit_detector_region
+  records:
+  - instrument: HSC
+    detector: 0
+    visit: 59134
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7049577cded697ebbf5f16b7117d27e03fee18fe6ae79ca43f13cdc3203c98ebbf9b794f140728e03f5749fa5048a3a33f632e4b972ca7ebbf0eb1470f570ee03f743f1030ecb0a33f9cda5020f2a6ebbf8f5ae5b1850de03f5ff4d516afa7a43f
+  - instrument: HSC
+    detector: 0
+    visit: 59142
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70075c45a10d9bebbf4f944e067722e03ffadfa7c4ac3da43fecfdaf7c709bebbfb843ad7cff22e03fd8d059da0b44a33f6dfb3e4c5caaebbfa74eddc34c09e03fc5fb0748b051a33f74007d2724aaebbf771b69e67c08e03f4b685efd7448a43f
+  - instrument: HSC
+    detector: 4
+    visit: 59134
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70b61db8a006a6ebbf7eeef1ff050ee03f7c6cad89fe7aa53fcea8a77c5aa6ebbf19534df6c00ee03f9e352f09757da43f3e26184ad4b4ebbf396f555940ebdf3f2f99c7da6e91a43fda12f475aab4ebbfaae1e35340e9df3f83d31878828aa53f
+  - instrument: HSC
+    detector: 5
+    visit: 59134
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 706ca5aaaa7297ebbfe8d745f81127e03f9faf14a1a272a53f06a52f3de897ebbfc972ce0b9527e03fe0520237b172a43f06aa8515fda6ebbf374b2e18a80de03f807025801d7ea43f6506f7e4a9a6ebbf746a711bec0ce03f474d5a9d7f7ba53f
+  - instrument: HSC
+    detector: 5
+    visit: 59142
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 703782f97dab9aebbfdd32a3420d22e03fd28d299a6913a53f42851d981e9bebbf956959bd8e22e03fe1358f407613a43fb68a6eb82eaaebbf7723d00b9f08e03f7b5e3a17e31ea43f391713efdda9ebbfec719f9de407e03f5c7ff321471ca53f
+  - instrument: HSC
+    detector: 11
+    visit: 59142
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70766ee09f419aebbfacc4e71ca021e03f3e0861d237eda53f721d0268c09aebbf5bfaff8a2122e03fa28e876052e8a43f48e18be7eda9ebbfc27e78b10108e03f2a9e9a8e18f1a43f3405da6b8aa9ebbf3e38c55c5307e03f34156662b6f3a53f
+  - instrument: HSC
+    detector: 43
+    visit: 59160
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 700bf4f109c29febbf5d2eede2ae1ae03f2bdac8dcab04a43f3581f4b758a0ebbfcb0764d7f11ae03f977e4fafd0f7a23f2a3cbe15bfafebbf62c5eb2c6d00e03f03b600cb2af5a23fa4973d6b2cafebbf1431623c2100e03f36f9425fe603a43f
+  - instrument: HSC
+    detector: 50
+    visit: 59150
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 70c0e1302de39eebbfa490f599bd1be03f01c0492a9b5da43f1112dfdd729febbf426f2201151ce03f1e2409ed894ea33f2e04f93613afebbf3cf8268e2c01e03f2e7b0562cc4da33f38fd043c83aeebbfb529c6dcd400e03f45471e86815da43f
+  - instrument: HSC
+    detector: 51
+    visit: 59160
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 701863ae69479febbffb557652641ae03fed620630f5e4a43f0219685bda9febbf7391f9cebc1ae03f3917fc52b7d7a33fda8e089a44afebbf01f98b0f3000e03f5dbe70cc65d6a33f2e531fb8b0aeebbf6521c4a5adffdf3f9e39680282e5a43f
+  - instrument: HSC
+    detector: 58
+    visit: 59150
+    region: !<lsst.sphgeom.ConvexPolygon>
+      encoded: 7030a3196c689eebbffdfd722d6d1be03fa5824340d43ea53f6449b760fb9eebbfb2fd7150cd1be03f663a5e272830a43f2ddbf0a99baeebbf363f41d2e300e03f611f9e6c5930a43f9d6d51b003aeebbfba20a26f8b00e03fc82578e9a83fa53f
+- type: dimension
+  element: visit_system_membership
+  records:
+  - instrument: HSC
+    visit_system: 0
+    visit: 59134
+  - instrument: HSC
+    visit_system: 0
+    visit: 59142
+  - instrument: HSC
+    visit_system: 0
+    visit: 59150
+  - instrument: HSC
+    visit_system: 0
+    visit: 59160
 - type: collection
   collection_type: CALIBRATION
   name: HSC/calib/DM-28636
@@ -914,7 +1176,13 @@ data:
   timespan_end: null
 - type: collection
   collection_type: RUN
-  name: fake_injection_catalog
+  name: fake_injection_catalog/fake_injection_catalog
+  host: null
+  timespan_begin: null
+  timespan_end: null
+- type: collection
+  collection_type: RUN
+  name: fake_injection_catalog/fake_injection_catalog_sharded
   host: null
   timespan_begin: null
   timespan_end: null
@@ -963,6 +1231,12 @@ data:
   - dia_catalogs/apdb
 - type: collection
   collection_type: CHAINED
+  name: fake_injection_catalog
+  children:
+  - fake_injection_catalog/fake_injection_catalog_sharded
+  - fake_injection_catalog/fake_injection_catalog
+- type: collection
+  collection_type: CHAINED
   name: models
   children:
   - pretrained_models/tac_cnn_lsstcam_2026-02-26
@@ -985,14 +1259,109 @@ data:
   collection_type: CHAINED
   name: HSC/defaults
   children:
+  - dia_catalogs
+  - fake_injection_catalog
   - templates/goodSeeing
   - skymaps
   - HSC/calib
   - refcats
   - sso
-  - dia_catalogs
   - models
-  - fake_injection_catalog
+- type: dataset_type
+  name: VisitDetectorFakeSourceCat
+  dimensions:
+  - band
+  - instrument
+  - day_obs
+  - detector
+  - physical_filter
+  - visit
+  storage_class: ArrowAstropy
+  is_calibration: false
+- type: dataset
+  dataset_type: VisitDetectorFakeSourceCat
+  run: fake_injection_catalog/fake_injection_catalog
+  records:
+  - dataset_id:
+    - !uuid '019ea870-1085-7562-8c0d-89485f8a828e'
+    data_id:
+    - instrument: HSC
+      detector: 4
+      visit: 59134
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59134/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59134_1_42_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-710a-9b23-6d1a7d5406d5'
+    data_id:
+    - instrument: HSC
+      detector: 5
+      visit: 59134
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59134/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59134_1_43_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-72e7-a9b6-a8387c7420bf'
+    data_id:
+    - instrument: HSC
+      detector: 0
+      visit: 59134
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59134/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59134_1_53_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-70e9-a9a4-4017de3167aa'
+    data_id:
+    - instrument: HSC
+      detector: 11
+      visit: 59142
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59142/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59142_1_37_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-7639-b3ee-a743a99af107'
+    data_id:
+    - instrument: HSC
+      detector: 5
+      visit: 59142
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59142/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59142_1_43_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-724a-8434-f958eac6899b'
+    data_id:
+    - instrument: HSC
+      detector: 0
+      visit: 59142
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59142/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59142_1_53_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-7f96-826b-ae86cbdeaaf3'
+    data_id:
+    - instrument: HSC
+      detector: 50
+      visit: 59150
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59150/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59150_1_12_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-7d95-8ae4-fa91b62df3f9'
+    data_id:
+    - instrument: HSC
+      detector: 58
+      visit: 59150
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59150/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59150_1_16_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-74c1-b2ae-f5ac99a3bb9a'
+    data_id:
+    - instrument: HSC
+      detector: 43
+      visit: 59160
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59160/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59160_1_09_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
+  - dataset_id:
+    - !uuid '019ea870-1085-7b98-8a39-8ac367e0c6f5'
+    data_id:
+    - instrument: HSC
+      detector: 51
+      visit: 59160
+    path: fake_injection_catalog/fake_injection_catalog/VisitDetectorFakeSourceCat/20160307/g/HSC-G/59160/VisitDetectorFakeSourceCat_HSC_g_HSC-G_59160_1_13_fake_injection_catalog_fake_injection_catalog.parq
+    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: bfKernel
   dimensions:
@@ -7280,469 +7649,21 @@ data:
   is_calibration: false
 - type: dataset
   dataset_type: injection_catalog
-  run: fake_injection_catalog
+  run: fake_injection_catalog/fake_injection_catalog_sharded
   records:
   - dataset_id:
-    - !uuid 'd9d0f36d-9f7a-46e2-a4f6-f2f84c285cc0'
-    data_id:
-    - band: g
-      htm7: 231828
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231828_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '0ec7e7f9-ec7d-4225-bd0f-28017422eefc'
-    data_id:
-    - band: g
-      htm7: 231829
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231829_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '06595ef1-56b3-4cba-859c-25c0f5d95d70'
-    data_id:
-    - band: g
-      htm7: 231830
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231830_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '212736b6-a7b5-4564-ad8d-68228bbafc6a'
-    data_id:
-    - band: g
-      htm7: 231831
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231831_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '9b36b4b3-1f8e-44f7-9adb-42c56d657bd8'
-    data_id:
-    - band: g
-      htm7: 231834
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231834_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '28149e6b-22ca-44ab-b0ba-aaf84895691e'
-    data_id:
-    - band: g
-      htm7: 231836
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231836_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'fa22f102-be4b-4d21-b83b-0efc19205a6b'
-    data_id:
-    - band: g
-      htm7: 231838
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231838_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '56fb4d10-69f3-407b-8d41-646021c1e698'
-    data_id:
-    - band: g
-      htm7: 231839
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231839_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '74ab515b-a68e-4943-9591-158d6c3716f7'
-    data_id:
-    - band: g
-      htm7: 231856
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231856_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'd7f00ea9-d76f-43c2-9237-c985f4b030e9'
-    data_id:
-    - band: g
-      htm7: 231857
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231857_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '3df4c9f2-35de-4cd0-a432-bdac35feb3e5'
-    data_id:
-    - band: g
-      htm7: 231858
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231858_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '8c4688ce-9ba4-40ef-8368-3d259b7f8da0'
-    data_id:
-    - band: g
-      htm7: 231859
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231859_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '09380c11-b87f-4446-8c3e-71145e8e2b0a'
-    data_id:
-    - band: g
-      htm7: 231861
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231861_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '4e8cba52-e7f3-4e8a-be4f-3c30921873cf'
-    data_id:
-    - band: g
-      htm7: 231862
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231862_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'ea9be93e-183d-4521-a040-9bbb176750a0'
-    data_id:
-    - band: g
-      htm7: 231863
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231863_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '29bdd39c-b4a9-47b2-975d-a526f059e74d'
-    data_id:
-    - band: g
-      htm7: 231865
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231865_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '3d4a8e7f-d78c-4e11-863c-d2ea0c6ce2ed'
-    data_id:
-    - band: g
-      htm7: 231866
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231866_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'b79694e2-dfcd-4be2-a880-054651267b4a'
-    data_id:
-    - band: g
-      htm7: 231867
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231867_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'f3bd64b8-02e2-42f4-a857-8622d2314f2f'
-    data_id:
-    - band: g
-      htm7: 231868
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231868_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '87fe23f8-4deb-4a96-b7a9-1aac05a80c59'
-    data_id:
-    - band: g
-      htm7: 231869
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231869_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '4549d6ed-ddd3-48d9-a4bf-169e5a093c3b'
+    - !uuid '019ea870-dd6f-7a9f-86df-fb4127f1f6e1'
     data_id:
     - band: g
       htm7: 231870
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231870_fake_injection_catalog.parq
+    path: fake_injection_catalog/fake_injection_catalog_sharded/injection_catalog/g/injection_catalog_g_231870_fake_injection_catalog_fake_injection_catalog_sharded.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'f4e75ae8-6aad-48c1-b19a-12e99e732e00'
+    - !uuid '019ea870-dd92-7da2-840b-197af4dea847'
     data_id:
     - band: g
       htm7: 231871
-    path: fake_injection_catalog/injection_catalog/g/injection_catalog_g_231871_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '94cb077d-605e-4ad7-a679-b16cebae8a1b'
-    data_id:
-    - band: i
-      htm7: 231828
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231828_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '6f956a5f-38e1-4fef-98a7-14134f184681'
-    data_id:
-    - band: i
-      htm7: 231829
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231829_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'a064238c-7290-477d-bc38-4d49fb3aa8fe'
-    data_id:
-    - band: i
-      htm7: 231830
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231830_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '63c79ee9-e1cc-4cca-a66c-a72138016869'
-    data_id:
-    - band: i
-      htm7: 231831
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231831_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'a248d807-2d64-415d-9f78-aa2ca8c3f83a'
-    data_id:
-    - band: i
-      htm7: 231834
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231834_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'e00b68bb-ce3c-4b69-bd34-4df6b451cbbc'
-    data_id:
-    - band: i
-      htm7: 231836
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231836_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '769414e8-ff80-4a98-902e-98166b0e6f16'
-    data_id:
-    - band: i
-      htm7: 231838
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231838_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '6635087f-a7d1-4aa9-ae8a-3c5f973f2242'
-    data_id:
-    - band: i
-      htm7: 231839
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231839_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'b7e8d96d-4a85-4ba8-bc10-4b27239d614c'
-    data_id:
-    - band: i
-      htm7: 231856
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231856_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '75615217-bf7b-4981-9ba9-0320b32a0c5f'
-    data_id:
-    - band: i
-      htm7: 231857
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231857_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '0285ef81-6b2f-46d9-9207-3c59ccd6b1dd'
-    data_id:
-    - band: i
-      htm7: 231858
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231858_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '8207b92f-7128-410e-8d01-11f0d9d55c42'
-    data_id:
-    - band: i
-      htm7: 231859
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231859_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'dc67edb3-e039-4c7d-9714-349a9fa33fcd'
-    data_id:
-    - band: i
-      htm7: 231861
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231861_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '317796dc-a22c-4c64-9fe8-436bf777a831'
-    data_id:
-    - band: i
-      htm7: 231862
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231862_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '943e7e82-8409-4e74-bee9-bc98ea44558f'
-    data_id:
-    - band: i
-      htm7: 231863
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231863_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '34dd5b91-ddc3-4c8c-8ffb-cb84f3f3f7a5'
-    data_id:
-    - band: i
-      htm7: 231865
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231865_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '228d097e-e130-457f-8612-e84d0338e4c9'
-    data_id:
-    - band: i
-      htm7: 231866
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231866_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '4280965c-3a13-49e7-b10b-258b48b8bb67'
-    data_id:
-    - band: i
-      htm7: 231867
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231867_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '6ba7bc7c-8a48-4b4c-93ed-7fc173c1e83c'
-    data_id:
-    - band: i
-      htm7: 231868
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231868_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'bceade1b-5d21-419f-ba08-afc6fe66eeb2'
-    data_id:
-    - band: i
-      htm7: 231869
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231869_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'f8f7c3b9-3250-4762-bbdb-85bed3c5b167'
-    data_id:
-    - band: i
-      htm7: 231870
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231870_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '253a0f00-17dc-4b50-8f0a-32d09d97d42a'
-    data_id:
-    - band: i
-      htm7: 231871
-    path: fake_injection_catalog/injection_catalog/i/injection_catalog_i_231871_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '4922d5b8-c08c-4e82-837f-a6c25d7bc160'
-    data_id:
-    - band: r
-      htm7: 231828
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231828_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'cf511a37-9cd3-442b-8901-18e627c45859'
-    data_id:
-    - band: r
-      htm7: 231829
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231829_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '73f1ffa0-3a3a-4ebe-9faf-a111ab18d6be'
-    data_id:
-    - band: r
-      htm7: 231830
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231830_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'f86fb19a-5ed2-4180-b1d0-bba5cd46c071'
-    data_id:
-    - band: r
-      htm7: 231831
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231831_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '22105ec1-3da9-4243-be6f-4abaa1813617'
-    data_id:
-    - band: r
-      htm7: 231834
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231834_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'f4894e05-61bc-412c-a4fa-112ea24810d1'
-    data_id:
-    - band: r
-      htm7: 231836
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231836_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'de865ef8-0b20-4dcd-a26d-af33d9ad409b'
-    data_id:
-    - band: r
-      htm7: 231838
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231838_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '06ece9db-35fa-4589-81bd-13180f9d9f56'
-    data_id:
-    - band: r
-      htm7: 231839
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231839_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '62e93042-af4f-40aa-8a60-08ded01c76eb'
-    data_id:
-    - band: r
-      htm7: 231856
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231856_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '15c98230-8161-4cde-be1f-039cb5f5f95e'
-    data_id:
-    - band: r
-      htm7: 231857
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231857_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'b15427c7-f90b-4e06-a16f-3554864122b6'
-    data_id:
-    - band: r
-      htm7: 231858
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231858_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'b151a274-73ea-4dd0-b94f-e37145c9ffe5'
-    data_id:
-    - band: r
-      htm7: 231859
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231859_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '73ab0cb0-eef1-4522-b26f-3fd08bffc2c9'
-    data_id:
-    - band: r
-      htm7: 231861
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231861_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'ed4b4085-cb44-42a4-8648-5f1c0fa4021f'
-    data_id:
-    - band: r
-      htm7: 231862
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231862_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '6584f71f-a6a5-4afe-bdb0-355b81a08dc0'
-    data_id:
-    - band: r
-      htm7: 231863
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231863_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'ca8d51f0-917d-4d1c-929a-489b08f8538a'
-    data_id:
-    - band: r
-      htm7: 231865
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231865_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '9652e7fe-1995-4f61-b684-ca14decbbad5'
-    data_id:
-    - band: r
-      htm7: 231866
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231866_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'e21fb1eb-7495-45bc-a7bd-8328b1fbf449'
-    data_id:
-    - band: r
-      htm7: 231867
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231867_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'fd6120fd-8150-411b-98de-9b8331a8aa37'
-    data_id:
-    - band: r
-      htm7: 231868
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231868_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'e88fb14a-c36a-45c6-9d87-a7c2fd3755de'
-    data_id:
-    - band: r
-      htm7: 231869
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231869_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid 'e40b1734-cf31-4a09-9c86-0a55b8bf8c8b'
-    data_id:
-    - band: r
-      htm7: 231870
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231870_fake_injection_catalog.parq
-    formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
-  - dataset_id:
-    - !uuid '08ff6a9c-4880-41dc-8072-5db13b72d3e1'
-    data_id:
-    - band: r
-      htm7: 231871
-    path: fake_injection_catalog/injection_catalog/r/injection_catalog_r_231871_fake_injection_catalog.parq
+    path: fake_injection_catalog/fake_injection_catalog_sharded/injection_catalog/g/injection_catalog_g_231871_fake_injection_catalog_fake_injection_catalog_sharded.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
 - type: dataset_type
   name: preloaded_SsObjects
@@ -7849,7 +7770,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '63a1e63c-7a08-40f8-9a97-62ee5e9ebc4d'
+    - !uuid '019ea85d-3d70-7ce1-a7dd-73579d152103'
     data_id:
     - instrument: HSC
       detector: 4
@@ -7857,7 +7778,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'fafa5a8b-ea83-43cb-9dca-b1a0ff8cdbad'
+    - !uuid '019ea85d-3d6f-73b7-b09b-da6b9dde682f'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7865,7 +7786,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '03ad8f92-71cc-45af-826d-5df4c138c49b'
+    - !uuid '019ea85d-3d6f-78f0-ae3e-eb2bfbf925da'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7873,7 +7794,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'cc8af4ba-2040-4cc4-8d63-80faa2f0fedb'
+    - !uuid '019ea862-647c-75e1-a4d2-c74bbea16486'
     data_id:
     - instrument: HSC
       detector: 11
@@ -7881,7 +7802,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '2995bae9-daa1-4b40-b8b0-f982a79b0e9e'
+    - !uuid '019ea862-647c-76a5-bacd-48164f74c6b4'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7889,7 +7810,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '6383731d-0415-44fd-b159-0ef951606f94'
+    - !uuid '019ea862-647c-7f09-aa00-373ea6088c77'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7897,7 +7818,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '7d679fca-088e-4622-a56e-61ce2a847f45'
+    - !uuid '019ea867-82df-7f2e-869b-eeef8184dea6'
     data_id:
     - instrument: HSC
       detector: 50
@@ -7905,7 +7826,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '5603a13e-9bb6-4534-8af2-f32a942fd345'
+    - !uuid '019ea867-82df-7e10-9569-6f30cb5c8e68'
     data_id:
     - instrument: HSC
       detector: 58
@@ -7913,7 +7834,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'ca05e224-0e58-44cf-b03f-01dc2ca0c3ec'
+    - !uuid '019ea86b-d7ad-7ea8-9f35-770c9f8f92cb'
     data_id:
     - instrument: HSC
       detector: 43
@@ -7921,7 +7842,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59160/preloaded_dia_forced_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'bfbdb5c2-b624-4f93-9f5c-1c3fdfc47ab5'
+    - !uuid '019ea86b-d7ad-7400-a4bc-302ad2f65bde'
     data_id:
     - instrument: HSC
       detector: 51
@@ -7941,7 +7862,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid 'f35048bd-1f85-4caf-80fc-b418d46f5be0'
+    - !uuid '019ea85d-3d70-7910-84ae-2ce959f22a9e'
     data_id:
     - instrument: HSC
       detector: 4
@@ -7949,7 +7870,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '975d8f02-430f-4b4d-a521-ea7665346663'
+    - !uuid '019ea85d-3d6f-7729-a82d-df72ec700c35'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7957,7 +7878,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '07b85d7c-5a79-43f0-9a5b-680715854b2a'
+    - !uuid '019ea85d-3d6f-70ff-8e12-92fc9b2ae039'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7965,7 +7886,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '0a56783f-a2e0-497e-aafb-2f9497c34f76'
+    - !uuid '019ea862-647c-75f4-9e47-617234ab705e'
     data_id:
     - instrument: HSC
       detector: 11
@@ -7973,7 +7894,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'bffb3a65-2206-423b-8566-1b03f42abcdc'
+    - !uuid '019ea862-647c-7584-8df8-140a0acb0cd4'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7981,7 +7902,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'c71743ec-bfe8-4013-bc35-353601e70c3d'
+    - !uuid '019ea862-647c-7586-b52a-aaf01dbef13d'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7989,7 +7910,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '52825367-a686-4106-99e0-1139240c8ace'
+    - !uuid '019ea867-82df-78a5-9736-ae39b70be2dd'
     data_id:
     - instrument: HSC
       detector: 50
@@ -7997,7 +7918,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '81e37641-1f65-4ec1-ba02-f66acb4e1b4c'
+    - !uuid '019ea867-82df-7bfe-b4d1-1977f4711589'
     data_id:
     - instrument: HSC
       detector: 58
@@ -8005,7 +7926,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '5305798b-209a-4ace-b76b-4a61841ac554'
+    - !uuid '019ea86b-d7ad-7250-8bf7-118954122bda'
     data_id:
     - instrument: HSC
       detector: 43
@@ -8013,7 +7934,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59160/preloaded_dia_object_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '25e955c7-d351-4d09-89f8-090179a111c0'
+    - !uuid '019ea86b-d7ad-7e7c-81b5-f77d2e0940cb'
     data_id:
     - instrument: HSC
       detector: 51
@@ -8033,7 +7954,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid 'c0f1ef87-a525-426c-b68d-566b22450dff'
+    - !uuid '019ea85d-3d70-74e3-aa52-006af5b87530'
     data_id:
     - instrument: HSC
       detector: 4
@@ -8041,7 +7962,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '17b4f2eb-4fe3-4b27-ab30-4d93f0d9ba12'
+    - !uuid '019ea85d-3d6f-7bd0-b19d-208ee1adbee2'
     data_id:
     - instrument: HSC
       detector: 5
@@ -8049,7 +7970,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'a4f30bdc-89b6-48e1-ac2b-10d7b4a5a446'
+    - !uuid '019ea85d-3d6f-7235-81e8-081ff291f936'
     data_id:
     - instrument: HSC
       detector: 0
@@ -8057,7 +7978,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '94a6bc23-882f-43d8-b47d-1605f7b73610'
+    - !uuid '019ea862-647c-7fad-a4c3-b2db1d3a176c'
     data_id:
     - instrument: HSC
       detector: 11
@@ -8065,7 +7986,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '8d1ebe78-58a8-430a-8367-2d98460dc2bd'
+    - !uuid '019ea862-647c-7903-b8fc-8a82ff260f7a'
     data_id:
     - instrument: HSC
       detector: 5
@@ -8073,7 +7994,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '37d793d3-a08d-4faf-932d-f3d8b5569a3e'
+    - !uuid '019ea862-647c-78fa-862e-f8622d50f2c9'
     data_id:
     - instrument: HSC
       detector: 0
@@ -8081,7 +8002,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '281de753-9566-432f-96d7-cc752afb8861'
+    - !uuid '019ea867-82df-746a-ae6b-69954ace32ad'
     data_id:
     - instrument: HSC
       detector: 50
@@ -8089,7 +8010,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'de8bc3db-5a49-47f5-9506-91e26eb1f3d8'
+    - !uuid '019ea867-82df-7ae2-a97e-e5d514448140'
     data_id:
     - instrument: HSC
       detector: 58
@@ -8097,7 +8018,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '9990a52e-1fbc-4aba-9e5f-3d2420d6fcca'
+    - !uuid '019ea86b-d7ad-7cf6-a897-90ede3dc3e11'
     data_id:
     - instrument: HSC
       detector: 43
@@ -8105,7 +8026,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59160/preloaded_dia_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid 'b7201785-127c-4545-9c2a-8e7219920225'
+    - !uuid '019ea86b-d7ac-7479-bf3d-fa8de67f658f'
     data_id:
     - instrument: HSC
       detector: 51
