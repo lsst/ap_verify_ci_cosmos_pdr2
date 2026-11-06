@@ -7770,7 +7770,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019ea85d-3d70-7ce1-a7dd-73579d152103'
+    - !uuid '01a1ae81-13db-7fb3-b6b5-db9632458394'
     data_id:
     - instrument: HSC
       detector: 4
@@ -7778,7 +7778,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-73b7-b09b-da6b9dde682f'
+    - !uuid '01a1ae81-13db-7182-8657-9661b18826c9'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7786,7 +7786,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-78f0-ae3e-eb2bfbf925da'
+    - !uuid '01a1ae81-13db-7a06-a74b-c463291cd3ed'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7794,7 +7794,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59134/preloaded_dia_forced_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-75e1-a4d2-c74bbea16486'
+    - !uuid '01a1ae85-ceb4-74cc-9f4c-459464d22681'
     data_id:
     - instrument: HSC
       detector: 11
@@ -7802,7 +7802,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-76a5-bacd-48164f74c6b4'
+    - !uuid '01a1ae85-ceb4-775e-b9fd-eee3ba38897c'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7810,7 +7810,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-7f09-aa00-373ea6088c77'
+    - !uuid '01a1ae85-ceb4-7669-b990-bbbe89485042'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7818,7 +7818,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59142/preloaded_dia_forced_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-7f2e-869b-eeef8184dea6'
+    - !uuid '01a1ae89-db50-7fbf-a863-9bdfd221a6cb'
     data_id:
     - instrument: HSC
       detector: 50
@@ -7826,7 +7826,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-7e10-9569-6f30cb5c8e68'
+    - !uuid '01a1ae89-db50-7bef-8d94-8e704a5508d7'
     data_id:
     - instrument: HSC
       detector: 58
@@ -7834,7 +7834,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59150/preloaded_dia_forced_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ad-7ea8-9f35-770c9f8f92cb'
+    - !uuid '01a1ae8c-a1c3-7bad-b826-b9144f2a0036'
     data_id:
     - instrument: HSC
       detector: 43
@@ -7842,7 +7842,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_forced_source/59160/preloaded_dia_forced_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ad-7400-a4bc-302ad2f65bde'
+    - !uuid '01a1ae8c-a1c3-7916-a4da-f209923b55ca'
     data_id:
     - instrument: HSC
       detector: 51
@@ -7862,7 +7862,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019ea85d-3d70-7910-84ae-2ce959f22a9e'
+    - !uuid '01a1ae81-13db-700e-ba13-8a3d35154232'
     data_id:
     - instrument: HSC
       detector: 4
@@ -7870,7 +7870,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-7729-a82d-df72ec700c35'
+    - !uuid '01a1ae81-13db-7eb4-bcc9-a4ce15fec1ef'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7878,7 +7878,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-70ff-8e12-92fc9b2ae039'
+    - !uuid '01a1ae81-13db-7697-97d8-825c1497cb3b'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7886,7 +7886,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59134/preloaded_dia_object_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-75f4-9e47-617234ab705e'
+    - !uuid '01a1ae85-ceb4-7df1-bff8-58f5f790886e'
     data_id:
     - instrument: HSC
       detector: 11
@@ -7894,7 +7894,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-7584-8df8-140a0acb0cd4'
+    - !uuid '01a1ae85-ceb4-7c7d-b843-ad6693cd8667'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7902,7 +7902,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-7586-b52a-aaf01dbef13d'
+    - !uuid '01a1ae85-ceb4-725d-b6ba-b95e0f836543'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7910,7 +7910,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59142/preloaded_dia_object_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-78a5-9736-ae39b70be2dd'
+    - !uuid '01a1ae89-db50-7849-92d3-3b9ad8ea2ba0'
     data_id:
     - instrument: HSC
       detector: 50
@@ -7918,7 +7918,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-7bfe-b4d1-1977f4711589'
+    - !uuid '01a1ae89-db50-733a-a759-460ef60259b0'
     data_id:
     - instrument: HSC
       detector: 58
@@ -7926,7 +7926,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59150/preloaded_dia_object_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ad-7250-8bf7-118954122bda'
+    - !uuid '01a1ae8c-a1c3-7f3f-aeda-12f1911be663'
     data_id:
     - instrument: HSC
       detector: 43
@@ -7934,7 +7934,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_object/59160/preloaded_dia_object_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ad-7e7c-81b5-f77d2e0940cb'
+    - !uuid '01a1ae8c-a1c3-799c-8c73-8de07f9e62da'
     data_id:
     - instrument: HSC
       detector: 51
@@ -7954,7 +7954,7 @@ data:
   run: dia_catalogs/apdb
   records:
   - dataset_id:
-    - !uuid '019ea85d-3d70-74e3-aa52-006af5b87530'
+    - !uuid '01a1ae81-13db-75ee-a008-55a2765d93c1'
     data_id:
     - instrument: HSC
       detector: 4
@@ -7962,7 +7962,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_42_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-7bd0-b19d-208ee1adbee2'
+    - !uuid '01a1ae81-13db-72dc-a9e3-59ad79b5fa38'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7970,7 +7970,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea85d-3d6f-7235-81e8-081ff291f936'
+    - !uuid '01a1ae81-13db-74b2-a8c0-6ee0305298e6'
     data_id:
     - instrument: HSC
       detector: 0
@@ -7978,7 +7978,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59134/preloaded_dia_source_HSC_59134_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-7fad-a4c3-b2db1d3a176c'
+    - !uuid '01a1ae85-ceb4-75a6-9044-27a569f3237a'
     data_id:
     - instrument: HSC
       detector: 11
@@ -7986,7 +7986,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_37_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-7903-b8fc-8a82ff260f7a'
+    - !uuid '01a1ae85-ceb4-7017-9ffd-029612e6d059'
     data_id:
     - instrument: HSC
       detector: 5
@@ -7994,7 +7994,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_43_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea862-647c-78fa-862e-f8622d50f2c9'
+    - !uuid '01a1ae85-ceb4-7b1c-873b-a9b221412838'
     data_id:
     - instrument: HSC
       detector: 0
@@ -8002,7 +8002,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59142/preloaded_dia_source_HSC_59142_1_53_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-746a-ae6b-69954ace32ad'
+    - !uuid '01a1ae89-db50-7cd1-bb7c-c5d73b809211'
     data_id:
     - instrument: HSC
       detector: 50
@@ -8010,7 +8010,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_12_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea867-82df-7ae2-a97e-e5d514448140'
+    - !uuid '01a1ae89-db50-7e81-932f-6b64e1218652'
     data_id:
     - instrument: HSC
       detector: 58
@@ -8018,7 +8018,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59150/preloaded_dia_source_HSC_59150_1_16_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ad-7cf6-a897-90ede3dc3e11'
+    - !uuid '01a1ae8c-a1c3-725a-bcf5-86221e91ecde'
     data_id:
     - instrument: HSC
       detector: 43
@@ -8026,7 +8026,7 @@ data:
     path: dia_catalogs/apdb/preloaded_dia_source/59160/preloaded_dia_source_HSC_59160_1_09_dia_catalogs_apdb.parq
     formatter: lsst.daf.butler.formatters.parquet.ParquetFormatter
   - dataset_id:
-    - !uuid '019ea86b-d7ac-7479-bf3d-fa8de67f658f'
+    - !uuid '01a1ae8c-a1c3-75cc-9e1a-1b1b64691761'
     data_id:
     - instrument: HSC
       detector: 51
